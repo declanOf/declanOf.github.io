@@ -1,0 +1,324 @@
+const controlsTemplate = `
+<form id="controlsForm">
+    <div class="flex-container align-items-start hide">
+        <div class="col-12" style="display: flex; justify-content: space-between">
+            <div>&nbsp;</div>
+            <h2 class="text-center configuration-display">CONFIGURATION <span class="arrow down">&#9660;</span><span class="arrow up">&#9650;</span></h2>
+            <span class="change-handler text-end" style="float:right;">
+                <button id="save-changes" class="text-end" style="float: right;">Save Changes</button>
+                <button id="reset-changes" class="text-end" style="float: right;">Reset Changes</button>
+            </span>
+        </div>
+
+        <ul>
+            <li><a href="#tab-1">Header & Footer</a></li>
+            <li><a href="#tab-2">Controls</a></li>
+            <li><a href="#tab-3">Sections</a></li>
+            <li><a href="#tab-4">Manage</a></li>
+            <li><a href="#tab-5">Advanced</a></li>
+            <li><a href="#tab-6">About</a></li>
+        </ul>
+
+        <div id="tab-1" class="col-11">
+            <div class="row" style="--bs-gutter-x: 0; --bs-gutter-y: 0;"></div>
+            <div class="row col-12">
+                <p class="col-12 small-caps strong">Document Header <small>(small-caps)</small></p>
+                <input class="hover-light col-12" type="text" style="font-variant-caps: small-caps; font-size: 1.25em;" name="documentHeader.title" title="Document Title" placeholder="Document Title" value="{{ documentHeader.title }}">
+                <p class="row" style="--bs-gutter-x: 0; --bs-gutter-y: 0;">&nbsp;</p>
+                <!-- TODO: convert hidden values to editable inputs -->
+                <input type="hidden" name="documentHeader.lineHeight" value="{{documentHeader.lineHeight}}">
+                <input type="hidden" name="documentHeader.keyLineHeight" value="{{documentHeader.keyLineHeight}}">
+                <input type="hidden" name="documentFooterTopPadding" value="{{documentFooterTopPadding}}">
+                <input type="hidden" name="sectionTitleTopPadding" value="{{sectionTitleTopPadding}}">
+                <input type="hidden" name="midnightMeetingPosition" value="{{midnightMeetingPosition}}">
+                <input type="hidden" name="padding" value="{{pagePadding}}">
+                <div class="col-3">
+                    <div class="col-12 strong">Office Information</div>
+                    <textarea class="hover-light col-12" title="Office Title" placeholder="Office Title" name="documentHeader.officeTitle.">{{#replace "<br>" "\n"}}{{{documentHeader.officeTitle}}}{{/replace}}</textarea>
+                    <div class="col-12 hover-light">
+                        <input class="col-12" type="text" name="documentHeader.officeStreet" title="Street Address" placeholder="Street Address" value="{{ documentHeader.officeStreet }}">
+                        <input class="col-6" type="text" name="documentHeader.officeCity"    title="City"           placeholder="City"           value="{{ documentHeader.officeCity }}">
+                        <input class="col-2" type="text" name="documentHeader.officeState"   title="State"          placeholder="State"          value="{{ documentHeader.officeState }}">
+                        <input class="col-3" type="text" name="documentHeader.officeZipcode" title="ZIP Code"       placeholder="ZIP Code"       value="{{ documentHeader.officeZipcode }}">
+                    </div>
+                    <div><input type="text" class="hover-light" placeholder="Office Phone" title="Office Phone" name="documentHeader.officePhone." value="{{ documentHeader.officePhone }}"></div>
+                    <div>Hours<textarea class="hover-light col-12" title="Office Hours" style="height:74px; overflow-y: scroll; resize: none;" name="documentHeader.officeHours.">{{#replace "<br>" "\n"}}{{{documentHeader.officeHours}}}{{/replace}}</textarea></div>
+                    <div>Holiday<textarea class="hover-light col-12" title="Holiay Hours" style="height:74px; overflow-y: scroll; resize: none;" name="documentHeader.holidayHours.">{{#replace "<br>" "\n"}}{{{documentHeader.holidayHours}}}{{/replace}}</textarea></div>
+                </div>
+                <div class="col-3">
+                    <div class="row strong">Header Text</div>
+                    <div class="row"><input type="text" class="hover-light" title="Last Updated" placeholder="Last Updated" name="documentHeader.lastUpdated" value="{{ documentHeader.lastUpdated }}"></div>
+                    <div class="row"><input type="text" class="hover-light" title="In Person Text" placeholder="In-Person Meetings Only" name="documentHeader.inPerson" value="{{ documentHeader.inPerson }}"></div>
+                    <div class="row"><input type="text" class="hover-light" name="documentHeader.website" title="Website" placeholder="Website" value="{{ documentHeader.website }}"></div>
+                    <div class="row"><input type="text" class="hover-light" name="documentHeader.displayUrl" title="Display URL" placeholder="Display URL" value="{{ documentHeader.displayUrl }}"></div>
+                </div>
+                <div class="col-6">
+                    <div class="row strong">
+                        <div class="col-1">&nbsp;</div>
+                        <div class="col-1-5 text-center">Display</div>
+                        <div class="col-1-5 text-center">Key</div>
+                        <div class="col-4-5">Description</div>
+                        <div class="col-3-5">Combine With</div>
+                    </div>
+                    {{#each controlTypes}}
+                    <div class="row hover-light" draggable="true" style="padding: 2px;">
+                        <div class="col-1">&nbsp;</div>
+                        <input type="hidden" name="types.{{key}}.showInColumn" value="false">
+                        <input type="checkbox" name="types.{{key}}.showInColumn" {{#if showInColumn}}checked="checked"{{/if}} class="col-1-5 text-end" style="max-height: 20px; margin-top: 3px;">
+                        <input class="col-1-5 text-center" type="text" name="types.{{key}}.displaySymbol" value="{{displaySymbol}}">
+                        <input type="hidden" name="types.{{key}}.showInHeader" value="{{showInHeader}}">
+                        <input class="col-4-5" type="text" name="types.{{key}}.description" placeholder="No description" value="{{description}}">
+                        <select class="col-3-5" name="types.{{key}}.withKey" style="max-width:150px">
+                            <option value="">None</option>
+                            {{#each withableTypes}}
+                            <option value="{{@key}}" withKey="{{withKey}}" {{#ifEquals ../withKey displaySymbol}}SELECTED="SELECTED"{{/ifEquals}}>{{displaySymbol}}: {{description}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            <p class="row" style="--bs-gutter-x: 0; --bs-gutter-y: 0;">&nbsp;</p>
+            <p class="col-12 small-caps strong">Document Footer</p>
+            <textarea class="hover-light col-12" title="Document Footer" placeholder="Document Footer Text" style="height:74px; overflow-y: scroll; resize: none;" name="documentFooter">{{#replace "<br>" "\n"}}{{{ documentFooter }}}{{/replace}}</textarea>
+        </div>
+        <div id="tab-2" class="col-11">
+            <p class="row" style="--bs-gutter-x: 0; --bs-gutter-y: 0;">&nbsp;</p>
+            <div class="col-7">
+                <span class="col-1-5 strong">Data Source</span>
+                <input type="text" class="col-9 hover-light" title="Data Source: please ask your central office IT or web chair for this URL" placeholder="Data Source" name="sourceUrl" value="{{ sourceUrl }}">
+            </div>
+            <div class="col-4-5">
+                <input type="number" class="hover-light col-2" style="text-align: right" title="Data Expiration (hours). Lower htis number to keep data fresher, and raise it back up to give your server a rest." name="expiryHours" value="{{ expiryHours }}"> <span style="padding-right: 10px" class="strong">Expiration Hours</span>
+            </div>
+            <div class="col-4-5">
+                <input type="number" class="hover-light col-2" style="text-align: right" name="minimumMultidayCount" value="{{ minimumMultidayCount }}"> <span style="padding-right: 10px" class="strong">Minimum Multiday Count</span>
+            </div>
+            <div class="col-4-5">
+                <input type="checkbox" {{#ifEquals showSectionDivider true}}checked="checked"{{/ifEquals}} class="hover-light col-3" name="showSectionDivider"><span style="padding-right: 10px" class="strong">Show Section Divider</span>
+            </div>
+            <div class="col-4-5">
+                <input type="checkbox" {{#ifEquals printDocumentFooter true}}checked="checked"{{/ifEquals}} class="hover-light col-3" name="printDocumentFooter"> <span style="padding-right: 10px" class="strong">Print Document Footer</span>
+            </div>
+            <div class="col-4-5">
+                <input type="checkbox" {{#ifEquals showColumnHeadersForEachDay true}}checked="checked"{{/ifEquals}} class="hover-light col-3" name="showColumnHeadersForEachDay"> <span style="padding-right: 10px" class="strong">Show Column Headers For Each Day</span>
+            </div>
+            <div class="col-2-5 align-end">
+                    <span style="padding-right: 5px;" class="strong">Standard row text size</span>
+                    <select class="col-6" title="Print Size" name="meetingFontSize">
+                        {{#each fontSizes}}
+                        <option {{#ifEquals ../meetingFontSize cssKey}}SELECTED="SELECTED"{{/ifEquals}} value="{{cssKey}}">{{label}}</option>
+                        {{/each}}
+                    </select>
+            </div>
+
+            <div class="col-2-5 align-end">
+                    <span style="padding-right: 5px;" class="strong">Meeting row line height</span>
+                    <select class="col-6" title="Print Size" name="meetings.rows.lineHeight">
+                        {{#each lineHeights}}
+                        <option {{#ifEquals ../meetingRowLineHeight this}}SELECTED="SELECTED"{{/ifEquals}} value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+            </div>
+
+            <div class="col-2-5 align-end">
+                    <span style="padding-right: 5px;" class="strong">Footer text size</span>
+                    <select class="col-6" title="Footer Size" name="footerFontSize">
+                        {{#each fontSizes}}
+                        <option {{#ifEquals ../footerFontSize cssKey}}SELECTED="SELECTED"{{/ifEquals}} value="{{cssKey}}">{{label}}</option>
+                        {{/each}}
+                    </select>
+            </div>
+            <div class="col-2-5 align-end">
+                <span style="padding-right: 5px;" class="col-12 strong">Page size &amp; orientation</span>
+                <select class="col-6" title="Page Size" name="pageSize">
+                    {{#each pageSizes}}
+                    <option {{#ifEquals ../pageSize size}}SELECTED="SELECTED"{{/ifEquals}} value="{{size}}">{{size}}: {{description}}</option>
+                    {{/each}}
+                </select>
+                <select class="col-5" title="Page Orientation" name="pageOrientation">
+                    {{#each pageOrientations}}
+                    <option {{#ifEquals ../pageOrientation this}}SELECTED="SELECTED"{{/ifEquals}} value="{{this}}">{{this}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="col-2-5 align-end">
+                <span style="padding-right: 5px;" class="strong">Print Margin</span>
+                <select class="col-5" name="margin">
+                    <option value="0mm" {{#ifEquals margin "0mm"}}SELECTED{{/ifEquals}}>0 mm</option>
+                    <option value="1mm" {{#ifEquals margin "1mm"}}SELECTED{{/ifEquals}}>1 mm</option>
+                    <option value="2mm" {{#ifEquals margin "2mm"}}SELECTED{{/ifEquals}}>2 mm</option>
+                    <option value="3mm" {{#ifEquals margin "3mm"}}SELECTED{{/ifEquals}}>3 mm</option>
+                    <option value="4mm" {{#ifEquals margin "4mm"}}SELECTED{{/ifEquals}}>4 mm</option>
+                    <option value="5mm" {{#ifEquals margin "5mm"}}SELECTED{{/ifEquals}}>5 mm</option>
+                    <option value="6mm" {{#ifEquals margin "6mm"}}SELECTED{{/ifEquals}}>6 mm</option>
+                    <option value="7mm" {{#ifEquals margin "7mm"}}SELECTED{{/ifEquals}}>7 mm</option>
+                    <option value="8mm" {{#ifEquals margin "8mm"}}SELECTED{{/ifEquals}}>8 mm</option>
+                    <option value="9mm" {{#ifEquals margin "9mm"}}SELECTED{{/ifEquals}}>9 mm</option>
+                    <option value="10mm" {{#ifEquals margin "10mm"}}SELECTED{{/ifEquals}}>1 cm</option>
+                    <option value="11mm" {{#ifEquals margin "11mm"}}SELECTED{{/ifEquals}}>11 mm</option>
+                    <option value="12mm" {{#ifEquals margin "12mm"}}SELECTED{{/ifEquals}}>12 mm</option>
+                    <option value="13mm" {{#ifEquals margin "13mm"}}SELECTED{{/ifEquals}}>13 mm</option>
+                    <option value="14mm" {{#ifEquals margin "14mm"}}SELECTED{{/ifEquals}}>14 mm</option>
+                    <option value="15mm" {{#ifEquals margin "15mm"}}SELECTED{{/ifEquals}}>15 mm</option>
+                    <option value="16mm" {{#ifEquals margin "16mm"}}SELECTED{{/ifEquals}}>16 mm</option>
+                    <option value="17mm" {{#ifEquals margin "17mm"}}SELECTED{{/ifEquals}}>17 mm</option>
+                    <option value="18mm" {{#ifEquals margin "18mm"}}SELECTED{{/ifEquals}}>18 mm</option>
+                    <option value="19mm" {{#ifEquals margin "19mm"}}SELECTED{{/ifEquals}}>19 mm</option>
+                    <option value="20mm" {{#ifEquals margin "20mm"}}SELECTED{{/ifEquals}}>20 cm</option>
+                    <option value="21mm" {{#ifEquals margin "21mm"}}SELECTED{{/ifEquals}}>21 mm</option>
+                    <option value="22mm" {{#ifEquals margin "22mm"}}SELECTED{{/ifEquals}}>22 mm</option>
+                    <option value="23mm" {{#ifEquals margin "23mm"}}SELECTED{{/ifEquals}}>23 mm</option>
+                    <option value="24mm" {{#ifEquals margin "24mm"}}SELECTED{{/ifEquals}}>24 mm</option>
+                    <option value="25mm" {{#ifEquals margin "25mm"}}SELECTED{{/ifEquals}}>25 mm</option>
+                    <option value="1in" {{#ifEquals margin "1in"}}SELECTED{{/ifEquals}}>1 in</option>
+                </select>
+            </div>
+            <p class="row" style="--bs-gutter-x: 0; --bs-gutter-y: 0;">&nbsp;</p>
+            <div class="row" style="--bs-gutter-x: 0; --bs-gutter-y: 0;">
+                {{{filtersContent}}}
+                <div class="col-6 header-text-replacements">
+                    <span class="small-caps strong col-8">Global Replacements: <button class="borderless strong" id="add-text-replacement">+</button></span>
+                    {{#each addressReplacements}}
+                    <p class="replacement hover-light"><button class="borderless remove-replacement">&#8998;</button> In address, replace <input type="text" name="addressReplacements.{{@key}}.old" value="{{old}}"> with <input type="text" name="addressReplacements.{{@key}}.new" value="{{new}}"></p>
+                    {{/each}}
+                    {{#each nameReplacements}}
+                    <p class="replacement hover-light"><button class="borderless remove-replacement">&#8998;</button> In name, replace <input type="text" name="nameReplacements.{{@key}}.old" value="{{old}}"> with <input type="text" name="nameReplacements.{{@key}}.new" value="{{new}}"></p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div id="tab-3" class="col-12">
+            <p class="row" style="--bs-gutter-x: 0; --bs-gutter-y: 0;">&nbsp;</p>
+            <div class="sections-controls-container">
+                {{{sectionsControlsContent}}}
+                <p><button id="add-section">Add Section</button></p>
+            </div>
+        </div>
+        <div id="tab-4" class="col-11">
+            <div id="controlsManageForm">
+                <ul>
+                    <li><a href="#subtab-1">Current Schedule</a></li>
+                    <li><a href="#subtab-2">Clone Schedule</a></li>
+                    <li><a href="#subtab-3">Build a New Schedule</a></li>
+                    <li><a href="#subtab-4">Import / Export Schedule Configuration</a></li>
+                </ul>
+                <div id="subtab-1" class="col-11">
+                    <p>Available Schedules:</p>
+                    <ul>
+                        {{#each availableConfigurations}}
+                            <li data-key="{{ this.[0] }}">
+                                {{#ifNotEquals this.[0] ../activeConfigurationKey}} <a class="delete" href="#" title="Delete Configuration"><img src="./resources/images/delete-icon.png" style="height: 14px; width: 14px;"></a>{{/ifNotEquals}}
+                                {{#ifEquals this.[0] ../activeConfigurationKey}}<span style="padding-left: 11px">&nbsp;</span>{{/ifEquals}}
+                                <a class="rename" href="#" title="Rename configuration"><img src="./resources/images/rename-icon.png" style="height: 14px; width: 14px"></a>
+                                {{#ifNotEquals this.[0] activeConfigurationKey}}<a href="#" class="select">{{/ifNotEquals}}{{this.[1]}}{{#ifNotEquals this.[0] activeConfigurationKey}}</a>{{/ifNotEquals}}
+                                {{#ifEquals this.[0] ../activeConfigurationKey}}(active){{/ifEquals}}
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div id="subtab-2" class="col-11">
+                    <form id="cloneScheduleForm-jquery-ui-bug">
+                    </form>
+                    <form id="cloneScheduleForm">
+                        <p class="errors"></p>
+                        <p title="Key is &quot;{{currentConfiguration.[0]}}&quot;">Clone configuration "{{currentConfiguration.[1]}}"</p>
+                        <p>
+                            <label class="col-md-12">Schedule Name: (not shown on schedule)<br><input type="text" placeholder="Schedule Name" name="name" class="col-md-12 hover-light"></label>
+                        </p>
+                        <p>
+                            <label class="col-md-12">Source URL:<br><input type="text" value="{{sourceUrl}}" placeholder="Source URL" name="sourceUrl" class="col-md-12 hover-light"></label>
+                        </p>
+                        <p>
+                            <label class="col-md-12">Office Title<br><textarea type="text" placeholder="Office Title" name="officeTitle" class="col-md-12 hover-light">{{documentHeader.[officeTitle]}}</textarea></label>
+                        </p>
+                        <p>
+                            <label class="col-md-12">
+                                Office Address<br>
+                                <input type="text" value="{{documentHeader.[officeStreet]}}" placeholder="Street" name="officeStreet" class="col-md-12 hover-light">
+                                <br>
+                                <input type="text" value="{{documentHeader.[officeCity]}}" placeholder="City" name="officeCity" class="col-md-6 hover-light">
+                                <input type="text" value="{{documentHeader.[officeState]}}" placeholder="State" name="officeState" class="col-md-2 hover-light">
+                                <input type="text" value="{{documentHeader.[officeZipcode]}}" placeholder="ZIP Code" name="officeZipcode" class="col-md-3 hover-light">
+                            </label>
+                        </p>
+                        <p>
+                            <label class="col-md-12">
+                                Office Phone:<br><input class="hover-light" type="text" value="{{documentHeader.[officePhone]}}" name="officePhone" placeholder="Office Phone"></label>
+                        </p>
+                        <p>
+                            <label class="col-md-12">
+                                Website/URL:<br><input class="col-md-11 hover-light" type="text" value="{{documentHeader.[displayUrl]}}" name="displayUrl" placeholder="Displayed Url"></label>
+                        </p>
+                        <p class="col-md-12" style="font-style: italic">Other settings can be changed in the newly-created configuration</p>
+                        <p>
+                            <input class="submit hover-light" type="submit" value="Add Schedule">
+                            <input class="cancel hover-light" type="submit" value="Cancel">
+                        </p>
+                    </form>
+                </div>
+                <div id="subtab-3" class="col-11">
+                    <form id="buildNewScheduleForm">
+                        <p>Welcome to TSML Meeting Schedule Builder!</p>
+                        <p class="small">The meeting schedule builder connects to your central office's API to generate a meeting schedule customised to your office.</p>
+                        <p class="small">You may select a pre-configured office or start fresh with one of your own. We would suggest a pre-configured office as it's easy to reconfigure for yours, and will show you to power of this schedule builder.</p>
+                        <p class="small">Once you're familiar with the software, you can create a new configuration, modify your configuration, or clone an existing configuration for your office.</p>
+                        <p>&nbsp;</p>
+                        {{{buildNewScheduleForm}}}
+                    </form>
+                </div>
+                <div id="subtab-4" class="col-11">
+                    <h2>Import</h2>
+                    <form id="importConfigurationClone">
+                        <div id="importConfiguration">
+                            <p><label>Name: <input class="hover-light" type="text" name="name"></label></p>
+                            <p>
+                                Paste the configuration:<br>
+                                <textarea name="settings" style="font-size: 11pt; height: 80px; width: 450px;" class="hover-light"></textarea>
+                            </p>
+                            <p><input class="hover-light" type="submit" id="import-configuration" value="Import"></p>
+                        </div>
+                    </form>
+                    <hr>
+                    <h2>Export</h2>
+                    <div id="exportConfiguration">
+                        <p class="text-center"><a class="hover-light" id="download-configuration" download="meeting-settings.json" href="data:application/text;base64,{{downloadData}}">Download
+                            "{{configurationName}}" schedule configuration</a></p>
+                        <p class="text-center">-or-</p>
+                        <p class="text-center">
+                            Copy the code:<br>
+                            <textarea readonly style="font-size: 11pt; height: 80px; width: 450px;" class="hover-light">{{configurationAsString}}</textarea>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tab-5" class="col-11">
+            <div id="advancedControlForm">
+                <textarea class="col-12" id="configuration-textarea" style="height:500px;">{{configurationAsString}}</textarea>
+                <p class="col-12 text-end"><button id="save-manual-edits">Save and Reload</button></p>
+            </div>
+        </div>
+        <div id="tab-6" class="col-11">
+            <h2>Meeting Schedule Tool</h2>
+
+            <p>This app helps twelve step recovery programs build printable meeting schedules.</p>
+
+            <p>This app was originally designed to build a schedule of A.A. meetings in Salt Lake County, UT. It can now be used to build schedules for A.A. and other 12-step recovery groups around the world.</p>
+
+            <p>The app and updates can be downloaded or cloned from <a href="https://github.com/declanOf/meeting-schedule-tool">here</a>.</p>
+
+            <p>The TSML plugin can be found <a href="https://wordpress.org/plugins/12-step-meeting-list">here</a>.</p>
+
+            <p>@2024 GnuGPL v3.0</p>
+        </div>
+    </div>
+</form>
+<div id="template-section" class="section-controls" style="display: none">
+    <table>
+        <tbody>
+            {{>sectionControls}}
+        </tbody>
+    </table>
+</div>
+`;

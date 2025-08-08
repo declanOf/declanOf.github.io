@@ -1,0 +1,95 @@
+const documentHeaderTemplate = `<table class="header">
+<thead>
+    <tr>
+        <th id="documentHeader-title" class="main_title font-size-30pt" colspan="3">{{documentHeader.title}}</th>
+    </tr>
+    <tr>
+        <th class="main_title_3 font-size-10-50pt">
+            <p
+                id="documentHeader-officeTitle"
+                class="office-title"
+                {{#ifEmptyOrWhitespace documentHeader.officeTitle}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+            >{{{documentHeader.officeTitle}}}</p>
+
+            <p
+                id="documentHeader-officeStreet"
+                class="font-size-9pt"
+                {{#ifEmptyOrWhitespace documentHeader.officeStreet}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+            >{{documentHeader.officeStreet}}<br>{{documentHeader.officeCity}}, {{documentHeader.officeState}} {{documentHheader.officeZipcode}}</p>
+
+            <p
+                id="documentHeader-officePhone"
+                {{#ifEmptyOrWhitespace documentHeader.officePhone}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+            >{{documentHeader.officePhone}}</p>
+
+            <p
+                id="documentHEader.officeHours"
+                {{#ifEmptyOrWhitespace documentHeader.officeHours}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+                class="font-size-9pt"
+            >{{{documentHeader.officeHours}}}</p>
+
+            <p
+                id="documentHEader.holidayHours"
+                {{#ifEmptyOrWhitespace documentHeader.holidayHours}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+                class="font-size-9pt"
+            >{{documentHeader.holidayHours}}</p>
+        </th>
+        <th class="main_title_2 font-size-10-50pt">
+            <p
+                {{#ifEmptyOrWhitespace documentHeader.lastUpdated}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+            >{{documentHeader.lastUpdated}}: {{dateString}}</p>
+
+            <p
+                {{#ifEmptyOrWhitespace documentHeader.inPerson}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+            >{{documentHeader.inPerson}}</p>
+
+            <p
+                {{#ifEmptyOrWhitespace documentHeader.website}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+            >{{documentHeader.website}}</p>
+
+            <p
+                {{#ifEmptyOrWhitespace documentHeader.displayUrl}}
+                style="display: none;"
+                {{/ifEmptyOrWhitespace}}
+            >{{documentHeader.displayUrl}}</p>
+        </th>
+        <th class="main_title_3 font-size-10-50pt">
+            <table class="keys">
+                <tbody>
+                {{#each types}}
+                    {{#if withSymbol}}
+                        <tr>
+                            <th>{{symbol}}:</th>
+                            <td>{{description}} |
+                                <strong>{{withSymbol}}</strong>: {{withDescription}}
+                            </td>
+                        </tr>
+                    {{else}}
+                        <tr>
+                            <th>{{symbol}}:</th>
+                            <td>{{description}}</td>
+                        </tr>
+                    {{/if}}
+                {{/each}}
+                </tbody>
+            </table>
+        </th>
+    </tr>
+</thead>
+</table>`;

@@ -1,0 +1,11 @@
+button {
+    display: none;
+}
+
+.dialog {
+    display: none;
+}
+
+div#controls {
+    display: none;
+}

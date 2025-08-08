@@ -94,6 +94,8 @@
 
 				$("div#chapter-content").html(chapters[chapterId].body);
 
+				$("div#chapter-content").animate({ scrollTop: 0 }, "slow");
+
 				$("#accordion h3").html("🔽 " + chapters[chapterId].title)
 				$("#accordion").accordion("option", "active", false);
 
@@ -116,7 +118,6 @@
 			}
 
 			#accordion ul {
-				background-color: #CCCCCC;
 				overflow-y: scroll;
 				position: fixed;
 				z-index: 100;

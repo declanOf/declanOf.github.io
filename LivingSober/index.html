@@ -94,6 +94,7 @@
 
 				$("div#chapter-content").html(chapters[chapterId].body);
 
+				$("#accordion h3").html("🔽 " + chapters[chapterId].title)
 				$("#accordion").accordion("option", "active", false);
 
 				$("button#prev").attr("disabled", (chapterId === 0));
@@ -102,9 +103,36 @@
 			};
 		</script>
 		<style type="text/css">
-			div#chapter-navigation {
-				position: relative;
+			#accordion-container {
+				position: fixed;
+				z-index: 100;
+				width: 100%;
+			}
+
+			#accordion h3 {
+				white-space: nowrap;
+			  	overflow: hidden;
+			  	text-overflow: ellipsis;
+			}
+
+			#accordion ul {
+				background-color: #CCCCCC;
+				overflow-y: scroll;
+				position: fixed;
+				z-index: 100;
+				top: 8.5em;
+				width: 100%;
+				z-index: 50;
+				bottom: 0;
+				overflow-y: scroll;
+			}
+
+			div#navigation {
+				position: fixed;
 				height: 3.5em;
+				top: 9.5em;
+				width: 100%;
+				z-index: 50;
 			}
 			button#prev, button#next {
 				position: absolute;
@@ -126,7 +154,7 @@
 
 			div#chapter-content {
 				position: fixed;
-				top: 15em;
+				top: 12em;
 				bottom: 0;
 				left: 0;
 				right: 0;
@@ -156,11 +184,13 @@
 	</head>
 
 	<body>
-		<div id="accordion">
-		  <h3>CHAPTERS</h3>
-		  <ul class="chapters"></ul>
+		<div id="accordion-container">
+			<div id="accordion">
+			  <h3>CHAPTERS</h3>
+			  <ul class="chapters"></ul>
+			</div>
 		</div>
-		<div id="chapter-navigation">
+		<div id="navigation">
 			<button id="prev">&lt; Prev</button>
 			<button id="next">Next &gt;</button>
 		</div>

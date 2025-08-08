@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<script type="text/javascript" src="./forward-about-that-title.js"></script>
+		<script type="text/javascript" src="./prefix-why-not-drinking.js"></script>
+		<script type="text/javascript" src="./chapter-01-using-this-booklet.js"></script>
+		<script type="text/javascript" src="./chapter-02-staying-away-from-the-first-drink.js"></script>
+		<script type="text/javascript" src="./chapter-03-using-the-24-hour-plan.js"></script>
+		<script type="text/javascript" src="./chapter-04-remembering-alcoholism-is-an-incurable-progressive-and-fatal-disease.js"></script>
+		<script type="text/javascript" src="./chapter-05-live-and-let-live.js"></script>
+		<script type="text/javascript" src="./chapter-06-getting-active.js"></script>
+		<script type="text/javascript" src="./chapter-07-using-the-serenity-prayer.js"></script>
+		<script type="text/javascript" src="./chapter-08-changing-old-routines.js"></script>
+		<script type="text/javascript" src="./chapter-09-eating-or-drinking-something-usually-sweet.js"></script>
+		<script type="text/javascript" src="./chapter-10-making-use-of-telephone-therapy.js"></script>
+		<script type="text/javascript" src="./chapter-11-availing-yourself-of-a-sponsor.js"></script>
+		<script type="text/javascript" src="./chapter-12-getting-plenty-of-rest.js"></script>
+		<script type="text/javascript" src="./chapter-13-first-things-first.js"></script>
+		<script type="text/javascript" src="./chapter-14-fending-off-loneliness.js"></script>
+		<script type="text/javascript" src="./chapter-15-watching-out-for-anger-and-resentments.js"></script>
+		<script type="text/javascript" src="./chapter-16-being-good-to-yourself.js"></script>
+		<script type="text/javascript" src="./chapter-17-looking-out-for-over-elation.js"></script>
+		<script type="text/javascript" src="./chapter-18-easy-does-it.js"></script>
+		<script type="text/javascript" src="./chapter-19-being-grateful.js"></script>
+		<script type="text/javascript" src="./chapter-20-remembering-your-last-drunk.js"></script>
+		<script type="text/javascript" src="./chapter-21-avoiding-dangerous-drugs.js"></script>
+		<script type="text/javascript" src="./chapter-22-eliminating-self-pity.js"></script>
+		<script type="text/javascript" src="./chapter-23-seeking-professional-help.js"></script>
+		<script type="text/javascript" src="./chapter-24-staying-clear-of-emotional-entanglements.js"></script>
+		<script type="text/javascript" src="./chapter-25-getting-out-of-the-if-trap.js"></script>
+		<script type="text/javascript" src="./chapter-26-being-wary-of-drinking-occasions.js"></script>
+		<script type="text/javascript" src="./chapter-27-letting-go-of-old-ideas.js"></script>
+		<script type="text/javascript" src="./chapter-28-reading-the-aa-message.js"></script>
+		<script type="text/javascript" src="./chapter-29-going-to-aa-meetings.js"></script>
+		<script type="text/javascript" src="./chapter-30-trying-the-12-steps.js"></script>
+		<script type="text/javascript" src="./chapter-31-finding-your-own-way.js"></script>
+
+	    <script
+		    type="text/javascript"
+		    src="https://code.jquery.com/jquery-3.7.1.min.js"
+		    integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs"
+		    crossorigin="anonymous"></script>
+
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+            integrity="sha384-SStJQoPipVtHHnIgUfDI+jTAbSyU+HMbhwt2XRRNpLIRFg9VguopT6Y4+cdOlkqg"
+            crossorigin="anonymous"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+            integrity="sha384-vIQIPaHJRqkO8xhnLxSZ0rHF6LyiWXbLF3grsa9pv9yDFyOPGrE1teHOuRNMJoZs"
+            crossorigin="anonymous">
+
+		<script type="text/javascript">
+			let chapters = null;
+
+			let currentChapterId = 0;
+
+			$(document).ready(
+				() => {
+					chapters = [
+						forwardAboutThatTitle, prefixWhyNotDrinking, chapter01, chapter02, chapter03, chapter04, chapter05, chapter06, chapter07, chapter08, chapter09, chapter10, chapter11, chapter12, chapter13, chapter14, chapter15, chapter16, chapter17, chapter18, chapter19, chapter20, chapter21, chapter22, chapter23, chapter24, chapter25, chapter26, chapter27, chapter28, chapter29, chapter30, chapter31
+					]
+
+					let newContent = "";
+
+					chapters.forEach((chapter, idx) => newContent += `<li><a class="show-chapter" attrId="${idx}">${chapter.title}</a></li>`);
+
+					$("div#accordion ul.chapters").append(newContent);
+
+					$("#accordion").accordion({"collapsible": true, "active": false});
+
+					$(".show-chapter").on("click", (event) => {
+						event.preventDefault();
+
+						changeChapter(parseInt($(event.target).attr("attrId")));
+					})
+
+					$("button#prev").on("click", (event) => changeChapter(currentChapterId - 1));
+
+					$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
+
+					changeChapter(0);
+				}
+			);
+
+			const changeChapter = (chapterId) => {
+				if (chapterId < 0 || chapterId >= chapters.length) {
+					return;
+				}
+
+				currentChapterId = chapterId;
+
+				$("div#chapter-content").html(chapters[chapterId].body);
+
+				$("#accordion").accordion("option", "active", false);
+
+				$("button#prev").attr("disabled", (chapterId === 0));
+
+				$("button#next").attr("disabled", (chapterId === chapters.length - 1));
+			};
+		</script>
+		<style type="text/css">
+			div#chapter-navigation {
+				position: relative;
+				height: 3.5em;
+			}
+			button#prev, button#next {
+				position: absolute;
+				padding-left: 2em;
+				padding-right: 2em;
+				top: .25em;
+				height: 3em;
+				width: 50%;
+			}
+
+			button#prev {
+				left:0;
+			}
+
+			button#next {
+				right: 0;
+			}
+
+			div#chapter-content {
+				font-family: Verdana;
+				font-size: 1.25em;
+				text-align: justify;
+			}
+
+			ul li {
+				list-style-type: none;
+				line-height: 2em;
+			}
+
+			ul li a {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="accordion">
+		  <h3>CHAPTERS</h3>
+		  <ul class="chapters"></ul>
+		</div>
+		<div id="chapter-navigation">
+			<button id="prev">&lt; Prev</button>
+			<button id="next">Next &gt;</button>
+		</div>
+		<div id="chapter-content"></div>
+	</body>
+</html>

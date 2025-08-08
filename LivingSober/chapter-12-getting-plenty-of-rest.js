@@ -1,0 +1,29 @@
+const chapter12 = {"reference": "getting-plenty-of-rest", "title": "Getting Plenty of Rest",                                                                 "body": `<h1>12 Getting Plenty of Rest</h1>
+<p>For at least three reasons, people who drink heavily often cannot realize how tired they are. The reasons are three characteristics of alcohol: (1) It is full of calories, which give instant energy; (2) it numbs the central nervous system, so that one cannot fully feel body discomfort; (3) after its anesthetic effect wears off, it produces agitation that <em>
+feels</em>
+&nbsp;like nervous energy.</p>
+<p>After we stop drinking, the agitating effect may persist for a while, leading to jumpiness and insomnia. Or we may suddenly become aware of our fatigue and so feel worn-out and lethargic. Or the two conditions may alternate.</p>
+<p>Either is a normal reaction that thousands of us have had at the very beginning of our sobriety, in degrees depending on our previous drinking and general state of health. Both wear off sooner or later and need not cause any alarm.</p>
+<p>But it is very important to get plenty of rest when we stop drinking, because the notion of having a drink seems to arrive from nowhere with greater ease when we are tired.</p>
+<p>Many of us have wondered why we suddenly feel like taking a drink, for no apparent reason. When we examine the situation, time after time we find that we are feeling exhausted and hadn't realized it. Chances are, we have used up too much energy and have not had enough rest. Generally, a snack of some kind or a little nap can change our feelings completely, and the idea of a drink vanishes. Even if we can't fall asleep, just a few minutes of lying down, or relaxing in a chair or a tub, take the edge off the fatigue.<br>
+<br></p>
+<p>It's even better, of course, to get our lives on a healthy schedule which permits a sufficient regular rest period every 24 hours.</p>
+<p>Not all, but thousands of us can tell stories of insomnia spells after we quit drinking. Evidently, it takes a little while for the nervous system to learn (or usually to relearn) the habit of regular, undisturbed sleep without alcohol in the body. What may be the worst part of this is our worry about it, because the worrying makes it even harder to get to sleep.</p>
+<p>The first advice we commonly give each other on this point is "Don't worry. Nobody has ever died of lack of sleep.&nbsp;
+When your body is tired enough, you'll sleep." And so it turns out.</p>
+<p></p>
+<p>Since insomnia was so often the excuse many of us gave ourselves for "needing a drink or two," we largely agree that a brand-new attitude toward insomnia helps in trying not to drink. Rather than toss and turn and fret about it, some of us give in to it, get up, and get some reading and writing done in the wee hours.</p>
+<p>Meanwhile, it is a good idea to check out our other health habits to see whether we are in any way making sleep difficult for ourselves. Too much caffeine in the evenings? Are we eating properly? Getting enough of the right kind of exercise? Is the digestive system functioning properly yet? That may take some time.</p>
+<p>Many simple, old-fashioned recipes for insomnia actually help, such as a glass of hot milk, deep breathing, a soak in a warm tub, a dull book, or some soft music. Some prefer more exotic gimmicks. One recovered alcoholic recommends heated ginger ale with pepper in it! (To each his or her own!) Others rely on a particular massage, yoga, or various remedies suggested in books on the subject.</p>
+<p>Even if we do not fall asleep at once, we can rest by lying still with the eyes closed. Nobody goes to sleep pacing a room or talking all night over coffee.</p>
+<p>If the condition persists, it may be advisable to check with a good physician who understands alcoholism well.</p>
+<p>One thing we have learned for sure:&nbsp;<em>
+Sleeping medicines of any sort are not the answer for alcoholics.&nbsp;</em>
+They almost invariably lead to drinking, our experience repeatedly shows.</p>
+<p>Because we know how dangerous such medicines can be, some of us have had to put up with slight discomfort for a little while, until our bodies settled into a healthy sleep routine. Once we are past the temporary unease, when a natural sleep rhythm sets in, we can see that the price was eminently worth it.</p>
+<p>One more curious item about sleep after we stop drinking may be useful. Long after we have weaned ourselves from the bottle, a great many of us are started to awaken some morning or night realizing we have just had an all-too-vivid dream about drinking.</p>
+<p></p>
+<p>Not all of us have such dreams. But enough have for us to know that they are common, and harmless.</p>
+<p>AA is not a program of dream interpretation, so we cannot point out the hidden meanings, if any, that such dreams have, as psychoanalysts and other dream interpreters do. We can report only that such dreams may occur, so don't be too surprised. Among the most common is a dream that one finds oneself drunk, and horrified about it, but has no memory at all of taking a drink. We may even awaken with chills, shakes, and other classic hangover jitters—when, of course, we haven't touched a drop in months. It was all just a bad dream. And it may come out of the blue, long, long after our last drink.</p>
+<p>Probably, it's a good thing that we find ourselves shook up and miserable at the notion of drinking, even in a dream. Maybe this means we are really beginning to get the idea, deep down in our bones, that drinking is no good for us. Sobriety is better, even to dream about.</p>
+<p>The beauty of sober sleep, once it is achieved, is the sheer pleasure of waking up—no real hangover, no worries about what may have happened in last night's blackout. Instead, it means facing the new day refreshed, hopeful, and grateful.</p>`};

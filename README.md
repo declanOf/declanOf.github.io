@@ -1,2 +1,3 @@
-# declanOf.github.io/LivingSober
-# declanOf.github.io/meeting-schedule-builder
+[Living Sober](LivingSober/index.html)
+
+[Meeting Schedule Builder](meeting-schedule-builder/index.html)

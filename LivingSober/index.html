@@ -105,13 +105,14 @@
 						$("div#font-size").slider(
 							{
 								value: 0,
-								min: -10,
+								min: -5,
 								max: 10,
 								step: 1,
 								slide: changeFontSize
 							}
 						);
 						changeChapter(0, "Living Sober");
+						$(".ui-slider-handle").html("100%");
 					} catch (error) {
 						alert(error);
 					}
@@ -130,6 +131,7 @@
 				}
 
 				$("div#chapter-content").attr("class", newFontClass);
+				$(".ui-slider-handle").html((100 + fontSize * 10).toString() + "%");
 			};
 
 			const changeChapter = (chapterId, titleOverwrite = null) => {
@@ -364,9 +366,12 @@
 			}
 
 			div#font-size span.ui-slider-handle {
-				height: 3.5em;
+				height: 2.5em;
 				width: 6em;
 				margin-left: -4em;
+				text-align: center;
+				line-height: 2.5em;
+				font-size: 1.5em;
 			}
 
 			div#information-dialog {

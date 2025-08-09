@@ -1,4 +1,7 @@
-const chapter14 = {"reference": "fending-off-loneliness", "title": "Fending Off Loneliness",                                                                 "body": `<h1>14 Fending Off Loneliness</h1>
+const chapter14 = {
+    "reference": "fending-off-loneliness",
+    "title": "14. Fending Off Loneliness",
+	"body": `<h1>14 Fending Off Loneliness</h1>
 <p>Alcoholism has been described as "the lonely disease," and very few recovered alcoholics argue the point. Looking back at the last years or months of our drinking, literally hundreds of thousands* of us remember feeling isolated even when we were among a lot of happy, celebrating people. We often felt a deep sense of not belonging, even when we cheerfully acted sociable.</p>
 <p>Many of us have said we drank originally to be "a part of the crowd." Many of us felt we had to drink to "get in," and to feel that we fitted in with the rest of the human race.</p>
 <p>It is an observable fact, of course, that our chief use of alcohol was egocentric—that is, we poured it into our&nbsp;<em>
@@ -51,4 +54,5 @@ is</em>
 <p>For these reasons, then, when we suggest avoiding fatigue and hunger, we often tie in a mention of one more hazard to make it a triple play: "Don't let yourself get too tired, too hungry, or too lonely."</p>
 <p>Check it out.</p>
 <p>If the notion of taking a drink crosses your mind any time soon, pause to consider. As often as not, you are likely to find you are in one or more of those three high-risk conditions.</p>
-<p>Tell somebody, fast. That at least starts to relieve the loneliness.</p>`};
+<p>Tell somebody, fast. That at least starts to relieve the loneliness.</p>`
+};

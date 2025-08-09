@@ -1,7 +1,7 @@
 const prefixWhyNotDrinking = {
-  title: "Why 'Not Drinking'?",
-  reference: "why-not-drinking",
-  body: `<h1>Why 'Not Drinking'?</h1>
+  "reference": "why-not-drinking",
+  "title": "Why 'Not Drinking'?",
+  "body": `<h1>Why 'Not Drinking'?</h1>
 <p>We members of Alcoholics Anonymous see the answer to that question when we look honestly at our own past lives. Our experience clearly proves that any drinking at all leads to serious trouble for the alcoholic, or problem drinker. In the words of the American Medical Association:</p>
 <div class="quote">
 <p>Alcohol, aside from its addictive qualities, also has a psychological effect that modifies thinking and reasoning. One drink can change the thinking of an alcoholic so that he feels he can tolerate another, and then another, and another. . . .</p>

@@ -1,4 +1,7 @@
-const chapter10 = {"reference": "making-use-of-telephone-therapy", "title": "Making Use of Telephone Therapy",                                                                 "body": `<h1>10 Making Use of Telephone Therapy</h1>
+const chapter10 = {
+	"reference": "making-use-of-telephone-therapy",
+	"title": "10. Making Use of Telephone Therapy",                                                                 
+	"body": `<h1>10 Making Use of Telephone Therapy</h1>
 <br>
 When we were first trying to achieve sobriety, many of us found ourselves taking a drink without planning to. Sometimes, it seemed to happen practically without our knowing it. There was no con-scious decision to drink, and there was no real thought about possible consequences. We had not intended to set off an entire drinking episode.
 <p>Now we have learned that simply postponing that first drink, putting something else in its place, provides us with a chance to think about our drinking history, to think about the disease of alcoholism, and to think about the probable results of starting to drink.</p>
@@ -21,4 +24,5 @@ And it really did not matter what time we called, day or nights!</em></p>
 <p>"Telephone therapy" works even when we don't know any individual to call. Since a number for AA is listed in practically every telephone directory in the United States and Canada (and in many other countries), it is easy simply to dial that number and instantly be in touch with someone who honestly understands, at gut level. It may be a person we have never met, but the same genuine empathy is there.</p>
 <p>Once the first call is made, it is much, much easier to make another, when it is needed. Finally, the need to talk away a desire for a drink virtually disappears for most of us. When it does, though,&nbsp;many of us find we have established a habit of occasional friendly telephone visits, so we keep them up because we enjoy them.</p>
 <p></p>
-<p>But that usually comes later. At first, "telephone therapy" is primarily for helping us stay sober. We reach for the phone instead of a drink. Even when we don't think it will work. Even when we don't want to.</p>`};
+<p>But that usually comes later. At first, "telephone therapy" is primarily for helping us stay sober. We reach for the phone instead of a drink. Even when we don't think it will work. Even when we don't want to.</p>`
+};

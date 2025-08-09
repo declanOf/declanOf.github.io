@@ -1,4 +1,7 @@
-const chapter25 = {"reference": "getting-out-of-the-if-trap", "title": "Getting Out of the If Trap",                                                                 "body": `<h1>25 Getting Out of the If Trap</h1>
+const chapter25 = {
+	"reference": "getting-out-of-the-if-trap",
+	"title": "Getting Out of the If Trap",                                                                 
+	"body": `<h1>25 Getting Out of the If Trap</h1>
 <p>Emotional entanglements with people are not the only way we can get our sobriety dangerously hooked to something extraneous. Some of us have a tendency to put other conditions on our sobriety, without intending to.</p>
 <p>One AA member says, "We drunks* are very 'iffy’ people. During our drinking days, we were often full of ifs, as well as liquor. A lot of our daydreams started out, '<em>
 If&nbsp;</em>
@@ -45,4 +48,5 @@ that</em>
 <p></p>
 <p><em>
 &nbsp;[* Some of us AA's refer to ourselves as "drunks," no matter how long we have been sober. Others prefer "alcoholics." There are good reasons for both terms. "Drunks" is lighthearted, tends to keep the ego down to size, and reminds us of our proneness to drinking. "Alcoholics" is equally honest, but more dignified and more in keeping with the now widely accepted idea that alcoholism is a perfectly respectable illness, not Just willful self-indulgence.]
-</em></p>`};
+</em></p>`
+};

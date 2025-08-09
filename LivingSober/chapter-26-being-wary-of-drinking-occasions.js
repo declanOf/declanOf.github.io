@@ -1,4 +1,7 @@
-const chapter26 = {"reference": "being-wary-of-drinking-occasions", "title": "Being Wary of Drinking Occasions ",                                                                 "body": `<h1>26 Being Wary of Drinking Occasions </h1>
+const chapter26 = {
+	"reference": "being-wary-of-drinking-occasions",
+	"title": "Being Wary of Drinking Occasions ",                                                                 
+	"body": `<h1>26 Being Wary of Drinking Occasions </h1>
 <p>We have worked out many ways of handling occasions when other people are drinking, so that we may enjoy these occasions without drinking.</p>
 <p>Back on page 21, we talked about whether to keep liquor or other alcoholic beverages in the house when we decide to stop drinking. In that discussion, we acknowledged that we live in a society where most people drink, and we cannot realistically expect that fact to change. Throughout the rest of our lives, there will be drinking occasions. Chances are, every day we will see people drinking, see drinking places, see and hear dozens of advertisements urging us to drink.</p>
 <p>We cannot insulate ourselves against all such suggestions, and it is futile to bemoan that fact. Nor do we have any need or wish to deprive other people of drinking. We have also found that we do not have to forgo the pleasure of being with companions who drink. Although it makes sense to spend more time with nondrinkers than with drinkers when we first start staying sober, we have no wish to withdraw from the world forever just because so many people drink. Those who cannot eat fish or nuts or pork or strawberries don't crawl into caves. Why should we?</p>
@@ -57,4 +60,5 @@ ourselves, and that we not make such announcements for publication or on broadca
 <p>Incidentally, such a statement very often induces someone else who wants to get over a drinking problem to try to seek aid, too.</p>
 <p>Just one more thing about this matter of drinking occasions. Many of us have had the guts, if pressure to drink really got unpleasantly strong, simply to make an excuse and leave, no matter what other people may think. After all, our life is at stake. We simply have to take whatever steps are necessary to preserve our own health. Other people's reactions are&nbsp;<em>
 their</em>
-&nbsp;problem, not ours.</p>`};
+&nbsp;problem, not ours.</p>`
+};

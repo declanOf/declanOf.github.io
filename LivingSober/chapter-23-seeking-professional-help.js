@@ -1,4 +1,7 @@
-const chapter23 = {"reference": "seeking-professional-help", "title": "Seeking Professional Help",                                                                 "body": `<h1>23 Seeking Professional Help</h1>
+const chapter23 = {
+	"reference": "seeking-professional-help",
+	"title": "Seeking Professional Help",                                                                 
+	"body": `<h1>23 Seeking Professional Help</h1>
 <p>Probably every recovered alcoholic has needed and sought professional help of the sort AA does not provide. For instance, the first two AA members, its co-founders, needed and got help from physicians, hospitals, and clergymen.</p>
 <p>Once we have started staying sober, a lot of our problems seem to disappear. But certain matters remain, or arise, which do require expert professional attention, such as that of an obstetrician, a chiropodist, a lawyer, a chest expert, a dentist, a dermatologist, or a psychological counselor of some kind.</p>
 <p>Since AA does not furnish such services, we rely on the professional community for job-getting or vocational guidance, advice on domestic relations, counseling on psychiatric problems, and many other needs. AA does not give financial assistance, food, clothing, or shelter to problem drinkers. But there are good professional agencies and facilities particularly happy to help out an alcoholic who is sincerely trying to stay sober.</p>
@@ -15,4 +18,5 @@ const chapter23 = {"reference": "seeking-professional-help", "title": "Seeking P
 <p>After you have examined the various possibilities, consulted with friends, and considered the pros and cons, the decision to get and use professional help is ultimately your own. To take or not to take disulfiram (Antabuse), to go into psychotherapy, to go back to school or change jobs, to have an operation, to go on a diet, to quit smoking, to take or disregard your lawyer's advice about your taxes—these are all your own decisions. We respect your right to make them—and to change your mind when developments so warrant.</p>
 <p>Naturally, not all medical, psychological, or other scientific experts see exactly eye-to-eye with us on everything in this booklet. That's perfectly okay. How could they? They have not had the personal, firsthand experience we have had with alcoholism, and very few of them see as many problem drinkers for as long as we do. Nor have we had the professional education and discipline which prepared them for their duties.</p>
 <p>This is not to say that they are right and we are wrong, or vice versa. We and they have entirely different roles and responsibilities in helping problem drinkers.</p>
-<p>May you have the same good fortune in these regards that so many of us have had. Hundreds of thousands of us are deeply grateful to the countless professional men and women who helped us, or tried to.</p>`};
+<p>May you have the same good fortune in these regards that so many of us have had. Hundreds of thousands of us are deeply grateful to the countless professional men and women who helped us, or tried to.</p>`
+};

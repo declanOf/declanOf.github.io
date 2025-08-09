@@ -1,4 +1,7 @@
-const chapter05 = {"reference": "live-and-let-live", "title": "Live and Let Live",                                                                 "body": `<h1>5 Live and Let Live</h1>
+const chapter05 = {
+	"reference": "live-and-let-live",
+	"title": "5. Live and Let Live",                                                                 
+	"body": `<h1>5 Live and Let Live</h1>
 <p>The old saying “Live and Let Live” seems so commonplace, it is easy to overlook its value. Of course, one reason it has been said over and over for years is that it has proved beneficial in so many ways.&nbsp;</p>
 <p>We A.A.’s make some special uses of it to help us not drink. It particularly helps us cope with people who get on our nerves. </p>
 <p>Reviewing once more a little of our drinking histories, many of us can see how very, very often our drinking problem appeared to be related somehow to other people. Experimenting with beer or wine in our teen-age years seemed natural, since so many others were doing it, and we wanted their approval. Then came weddings and bar mitzvahs and christenings and holidays and football games and cocktail parties and business lunches...and the list can go on and on. In all of these circumstances, we drank at least partly because everybody else was drinking and seemed to expect us to.</p>
@@ -21,4 +24,5 @@ const chapter05 = {"reference": "live-and-let-live", "title": "Live and Let Live
 <p>“Let Live”—yes. But some of us find just as much value in the first part of the slogan: “Live”! When we have worked out ways to enjoy our own living fully, then we are content to let other people live any way they want. If our own lives are interesting and productive, we really have no impulse or desire to find fault with others or worry about the way they act.</p>
 <p>Can you think right this minute of someone who really bothers you?</p>
 <p>If you can, try something. Postpone thinking about him or her and whatever it is about the person that riles you. You can boil inside about it later if you want to. But for right now, why not put it off while you read the next paragraph?</p>
-<p>Live! Be concerned with your own living. In our opinion, staying sober opens up the way to life and happiness. It is worth sacrificing many a grudge or argument. . . . Okay, so you didn’t manage to keep your mind completely off that other person. Let’s see whether the suggestion coming next will help.<br></p>`};
+<p>Live! Be concerned with your own living. In our opinion, staying sober opens up the way to life and happiness. It is worth sacrificing many a grudge or argument. . . . Okay, so you didn’t manage to keep your mind completely off that other person. Let’s see whether the suggestion coming next will help.<br></p>`
+};

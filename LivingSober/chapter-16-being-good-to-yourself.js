@@ -1,4 +1,7 @@
-const chapter16 = {"reference": "being-good-to-yourself", "title": "Being Good to Yourself",                                                                 "body": `<h1>16 Being Good to Yourself</h1>
+const chapter16 = {
+	"reference": "being-good-to-yourself",
+	"title": "16. Being Good to Yourself",                                                                 
+	"body": `<h1>16 Being Good to Yourself</h1>
 <p>When a loved one or a dear friend of ours is recuperating from a serious illness, we generally try to give what good nurses call T.L.C. (Tender Loving Care). We pamper a sick child, providing favorite foods and some fun to help in recovery.</p>
 <p>Convalescence from the illness of active alcoholism takes some time, and anyone going through it deserves consideration and a measure of T.L.C.</p>
 <p>In times past, people often believed that those recovering from certain ailments just deserved to suffer, since it was thought they had deliberately, selfishly inflicted the sickness on themselves.</p>
@@ -19,4 +22,5 @@ other</em>
 <p></p>
 <p>Since the body seeks to normalize itself, maybe yours will welcome opportunities for needed rest. Enjoy deliciously drowsy naps, or good, long nights of peaceful slumber. Or perhaps you have left-over energy you can use in pure fun and enjoyment. As much as other aspects of life, these seem necessary for fulfilling our entire human potential.</p>
 <p>Now is the time, the only time there is. And if we are not kind to ourselves right now, we certainly cannot rightfully expect respect or consideration from others.</p>
-<p>We have found we can enjoy, sober, every good thing we enjoyed while drinking—and many, many more. It takes a little practice, but the rewards more than make up for the effort. To do so is not selfish, but self-protective. Unless we cherish our own recovery, we cannot survive to become unselfish, ethical, and socially responsible people.</p>`};
+<p>We have found we can enjoy, sober, every good thing we enjoyed while drinking—and many, many more. It takes a little practice, but the rewards more than make up for the effort. To do so is not selfish, but self-protective. Unless we cherish our own recovery, we cannot survive to become unselfish, ethical, and socially responsible people.</p>`
+};

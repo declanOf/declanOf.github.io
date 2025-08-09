@@ -1,4 +1,7 @@
-const chapter17 = {"reference": "looking-out-for-over-elation", "title": "Looking Out for Over-elation",                                                                 "body": `<h1>17 Looking Out for Over-elation</h1>
+const chapter17 = {
+	"reference": "looking-out-for-over-elation",
+	"title": "17. Looking Out for Over-elation",                                                                 
+	"body": `<h1>17 Looking Out for Over-elation</h1>
 <p>A great many drinkers (whether alcoholics or not) change an internal state of discomfort to one of enjoyment by the single act of taking a drink. This method of fleeing from pain to pleasure has been described as "escape drinking."</p>
 <p>But thousands and thousands of us know that often we were already in a happy frame of mind when we took a drink. In fact, when we review our drinking records carefully, large numbers of us can see that we often drank in order to intensify an already jubilant mood.</p>
 <p>This experience gives rise to our next suggestion, which is: Be especially cautious during moments of celebration or times of just feeling extraordinarily good.</p>
@@ -18,4 +21,5 @@ have</em>
 <p>We have learned now not to panic when the thought of a drink comes into the mind. After all, it is a natural thought for anyone to have in modern times, and especially understandable for those of us who have had extensive practice in the art.</p>
 <p>But the&nbsp;<em>
 thought</em>
-of a drink is not necessarily the same thing as the desire for one, and neither need plunge us into gloom or fear. Both can be viewed simply as warning bells to remind us of the perils of alcoholism. The perils are forever, even when we feel so fine that we wonder whether it's really all right for anyone to feel as good as we do, now.</p>`};
+of a drink is not necessarily the same thing as the desire for one, and neither need plunge us into gloom or fear. Both can be viewed simply as warning bells to remind us of the perils of alcoholism. The perils are forever, even when we feel so fine that we wonder whether it's really all right for anyone to feel as good as we do, now.</p>`
+};

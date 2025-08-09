@@ -1,4 +1,7 @@
-const chapter28 = {"reference": "reading-the-aa-message", "title": "Reading the AA Message",                                                                 "body": `<h1>28 Reading the AA Message</h1>
+const chapter28 = {
+	"reference": "reading-the-aa-message",
+	"title": "Reading the AA Message",                                                                 
+	"body": `<h1>28 Reading the AA Message</h1>
 <p>Human beings, we are told, learn many things best by seeing and touching as well as hearing them; and reading about them reinforces the strength of such learning even further.</p>
 <p>There are many good publications on alcoholism, and some not so good. Many of us have also profited by reading in other fields. But AA. neither endorses nor opposes anybody else's publications. We simply offer our own.</p>
 <p>Even drinkers who have never before been much for reading spend hours poring over AA material. It is undoubtedly the best way to grasp a broad, firsthand consensus of all AA wisdom, instead of just the hearsay of one time and place.</p>
@@ -36,4 +39,5 @@ In addition, the AA General Service Office produces a bimonthly newsletter, Box 
 <h4>The AA. Grapevine</h4>
 <p>Every month, a fresh collection of AA thought and humor appears in this magazine. Almost all its articles, graphics, and cartoons are by A.A. members. The writers are not paid, and many illustrations also are contributed free.</p>
 <p>It contains thought pieces, illustrated stories, news about AA, letters from AA members around the globe, and inspirational articles (no poems).</p>
-<p>Individual subscriptions may be ordered directly by writing to: Box 1980, Grand Central Station, New York, NY 10163. Copies of the current issue are usually available at meetings of AA groups.</p>`};
+<p>Individual subscriptions may be ordered directly by writing to: Box 1980, Grand Central Station, New York, NY 10163. Copies of the current issue are usually available at meetings of AA groups.</p>`
+};

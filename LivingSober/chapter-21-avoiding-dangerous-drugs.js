@@ -1,4 +1,7 @@
-const chapter21 = {"reference": "avoiding-dangerous-drugs", "title": "Avoiding Dangerous Drugs and Medications ",                                                                 "body": `<h1>21 Avoiding Dangerous Drugs and Medications </h1>
+const chapter21 = {
+	"reference": "avoiding-dangerous-drugs",
+	"title": "21. Avoiding Dangerous Drugs and Medications ",                                                                 
+	"body": `<h1>21 Avoiding Dangerous Drugs and Medications </h1>
 <p>Mankind's use of various chemicals to change moods and alter feelings is ancient and widespread. Ethyl alcohol was probably the first of such chemicals, and may have always been the most widely popular drug for this use.</p>
 <p>Some drugs have legitimate value and are beneficial when administered by knowledgeable physicians if used solely as directed, and discontinued when they are no longer a medical necessity.</p>
 <p>As AA members—not physicians—we are certainly not qualified to recommend any medications. Nor are we qualified to advise anyone not to take a prescribed medication.</p>
@@ -76,4 +79,5 @@ const chapter21 = {"reference": "avoiding-dangerous-drugs", "title": "Avoiding D
 <p>In time, the nervous system becomes healthy and thoroughly conditioned to the absence of mood-changing drugs, such as firewater. When we feel more comfortable without chemical substances than we felt while we were dependent on them, we come to accept and trust our normal feelings, whether high or low.</p>
 <p></p>
 <p>Then we have the strength to make healthful, independent decisions, relying less on impulse or the chemically triggered urge for immediate satisfaction. We can see and consider more aspects of a situation than before, can delay gratification for the sake of more enduring, long-term benefits, and can better weigh, not only our own welfare, but also that of others we care for.</p>
-<p>Chemical substitutes for life simply do not interest us any more, now that we know what genuine living is.</p>`};
+<p>Chemical substitutes for life simply do not interest us any more, now that we know what genuine living is.</p>`
+};

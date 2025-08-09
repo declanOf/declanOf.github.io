@@ -1,4 +1,7 @@
-const chapter24 = {"reference": "staying-clear-of-emotional-entanglements", "title": "Steering Clear of Emotional Entanglements",                                                                 "body": `<h1>24 Steering Clear of Emotional Entanglements</h1>
+const chapter24 = {
+	"reference": "staying-clear-of-emotional-entanglements",
+	"title": "Steering Clear of Emotional Entanglements",                                                                 
+	"body": `<h1>24 Steering Clear of Emotional Entanglements</h1>
 <p>Falling in love with your doctor or nurse or a fellow patient is an old romantic story. Recovering alcoholics are susceptible to the same fever. In fact, alcoholism does not seem to bring immunity from any known human condition.</p>
 <p>Sorrow is born in the hasty heart, an old saw goes. Other troubles, including an alcoholic bout, can be, too.</p>
 <p>During our days of bottles, cans, and glasses, many of us spent a lot of time concerned about intimate personal ties. Whether we wanted temporary partnerships or a long-term "meaningful relationship," we were often preoccupied with our deep involvement—or noninvolvement —with other people.</p>
@@ -24,4 +27,5 @@ may</em>
 <p>Immature or premature liaisons are crippling to recovery. Only after we have had time to mature somewhat beyond merely not drinking are we equipped to relate maturely to other people.</p>
 <p>When our sobriety has a foundation firm enough to withstand stress,&nbsp;<em>
 then</em>
-&nbsp;we are ready to work through and straighten out other aspects of our lives.</p>`};
+&nbsp;we are ready to work through and straighten out other aspects of our lives.</p>`
+};

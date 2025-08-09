@@ -1,4 +1,7 @@
-const chapter12 = {"reference": "getting-plenty-of-rest", "title": "Getting Plenty of Rest",                                                                 "body": `<h1>12 Getting Plenty of Rest</h1>
+const chapter12 = {
+	"reference": "getting-plenty-of-rest",
+	"title": "12. Getting Plenty of Rest",                                                                 
+	"body": `<h1>12 Getting Plenty of Rest</h1>
 <p>For at least three reasons, people who drink heavily often cannot realize how tired they are. The reasons are three characteristics of alcohol: (1) It is full of calories, which give instant energy; (2) it numbs the central nervous system, so that one cannot fully feel body discomfort; (3) after its anesthetic effect wears off, it produces agitation that <em>
 feels</em>
 &nbsp;like nervous energy.</p>
@@ -26,4 +29,5 @@ They almost invariably lead to drinking, our experience repeatedly shows.</p>
 <p>Not all of us have such dreams. But enough have for us to know that they are common, and harmless.</p>
 <p>AA is not a program of dream interpretation, so we cannot point out the hidden meanings, if any, that such dreams have, as psychoanalysts and other dream interpreters do. We can report only that such dreams may occur, so don't be too surprised. Among the most common is a dream that one finds oneself drunk, and horrified about it, but has no memory at all of taking a drink. We may even awaken with chills, shakes, and other classic hangover jitters—when, of course, we haven't touched a drop in months. It was all just a bad dream. And it may come out of the blue, long, long after our last drink.</p>
 <p>Probably, it's a good thing that we find ourselves shook up and miserable at the notion of drinking, even in a dream. Maybe this means we are really beginning to get the idea, deep down in our bones, that drinking is no good for us. Sobriety is better, even to dream about.</p>
-<p>The beauty of sober sleep, once it is achieved, is the sheer pleasure of waking up—no real hangover, no worries about what may have happened in last night's blackout. Instead, it means facing the new day refreshed, hopeful, and grateful.</p>`};
+<p>The beauty of sober sleep, once it is achieved, is the sheer pleasure of waking up—no real hangover, no worries about what may have happened in last night's blackout. Instead, it means facing the new day refreshed, hopeful, and grateful.</p>`
+};

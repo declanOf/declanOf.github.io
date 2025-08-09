@@ -1,4 +1,7 @@
-const chapter01 = {"reference": "using-this-booklet", "title": "Using this Booklet",                                                                 "body": `<h1>1 Using this Booklet</h1>
+const chapter01 = {
+    "reference": "using-this-booklet",
+    "title": "1. Using this Booklet",
+	"body": `<h1>1 Using this Booklet</h1>
 <p>This booklet does not offer a plan for recovery from alcoholism. The Alcoholics Anonymous Steps that summarize its program of recovery are set forth in detail in the books Alcoholics Anonymous and Twelve Steps and Twelve Traditions. Those Steps are not interpreted here, nor are the processes they cover discussed in this booklet.</p>
 <p>Here, we tell only some methods we have used for living without drinking. You are welcome to all of them, whether you are interested in Alcoholics Anonymous or not.</p>
 <p>Our drinking was connected with many habits—big and little. Some of them were thinking habits, or things we felt inside ourselves. Others were doing habits—things we did, actions we took.</p>
@@ -41,4 +44,5 @@ B. Use your common sense.</strong>
 began</em>
 &nbsp;with not drinking—with getting sober and staying completely free of alcohol in any amount, and in any form. We have also found that we have to stay away from other mind-changing drugs. We can move toward a full and satisfying life only when we stay sober. Sobriety is the launching pad for our recovery.<br>
 <br></p>
-<p>In a way, this booklet is about how to handle sobriety. (Before, we couldn't; so we drank)</p>`};
+<p>In a way, this booklet is about how to handle sobriety. (Before, we couldn't; so we drank)</p>`
+};

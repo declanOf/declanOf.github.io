@@ -1,4 +1,8 @@
-const chapter04 = {"reference": "remembering-alcoholism-is-an-incurable-progressive-and-fatal-disease", "title": "Remembering that alcoholism is an incurable, progressive, fatal disease",                                                                 "body": `<h1>4 Remembering that alcoholism is an incurable, progressive, fatal disease</h1>
+const chapter04 = {
+    "reference": "remembering-alcoholism-is-an-incurable-progressive-and-fatal-disease",
+    "title": "4. Remembering that alcoholism is an incurable, progressive, fatal disease",
+    
+	"body": `<h1>4 Remembering that alcoholism is an incurable, progressive, fatal disease</h1>
 <p>Many people in the world know they cannot eat certain foods—oysters or strawberries or eggs or cucumbers or sugar or something else—without getting very uncomfortable and maybe even quite sick.&nbsp;</p>
 <p>A person with a food allergy of this kind can go around feeling a lot of self-pity, complaining to everyone that he or she is unfairly deprived, and constantly whining about not being able, or allowed, to eat something delicious. Obviously, even though we may feel cheated, it isn’t wise to ignore our own physiological makeup. If our limitations are ignored, severe discomfort or illness may result. To stay healthy and reasonably happy, we must learn to live with the bodies we have. </p>
 <p>One of the new thinking habits a recovering alcoholic can develop is a calm view of himself or herself as someone who needs to avoid chemicals (alcohol and other drugs that are substitutes for it) if he or she wants to maintain good health. </p>
@@ -20,4 +24,5 @@ const chapter04 = {"reference": "remembering-alcoholism-is-an-incurable-progress
 <p>We need not be ashamed that we have a disease. It is no disgrace. No one knows exactly why some people become alcoholics while others don’t. It is not our fault. We did not want to become alcoholics. We did not try to get this illness. We did not suffer alcoholism just because we enjoyed it, after all. We did not deliberately, maliciously set out to do the things we were later ashamed of. We did them against our better judgment and instinct because we were really sick, and didn’t even know it. </p>
 <p>We’ve learned that no good comes of useless regret and worry about how we got this way. The first step toward feeling better, and getting over our sickness, is quite simply not drinking. </p>
 <p>Try the idea on for size. Wouldn’t you rather recognize you have a health condition which can be successfully treated, than spend a lot of time miserably worrying about what’s wrong with you? We have found this is a better-looking, and better-feeling, picture of ourselves than the old gloomy selves we used to see. It is truer, too. We know. The proof of it is in the way we feel, act, and think—now. Anyone who wants it is welcome to a “free trial period” of this new concept of self. Afterward, anyone who wants the old days again is perfectly free to start them all over. It is your right to take back your misery if you want it. </p>
-<p>On the other hand, you can also keep the new picture of yourself, if you’d rather. It, too, is yours by right.<br></p>`};
+<p>On the other hand, you can also keep the new picture of yourself, if you’d rather. It, too, is yours by right.<br></p>`
+};

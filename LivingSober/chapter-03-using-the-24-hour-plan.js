@@ -1,4 +1,8 @@
-const chapter03 = {"reference": "using-the-24-hour-plan", "title": "Using the 24 Hour Plan",                                                                 "body": `<h1>3 Using the 24 Hour Plan</h1>
+const chapter03 = {
+    "reference": "using-the-24-hour-plan",
+    "title": "3. Using the 24 Hour Plan",
+    
+	"body": `<h1>3 Using the 24 Hour Plan</h1>
 <p>In our drinking days, we often had such bad times that we swore, “Never again.” We took pledges for as long as a year, or promised someone we would not touch the stuff for three weeks, or three months. And of course, we tried going on the wagon for various periods of time. </p>
 <p>We were absolutely sincere when we voiced these declarations through gritted teeth. With all our hearts, we wanted never to be drunk again. We were determined. We swore off drinking altogether, intending to stay off alcohol well into some indefinite future. </p>
 <p>Yet, in spite of our intentions, the outcome was almost inevitably the same. Eventually, the memory of the vows, and of the suffering that led to them, faded. We drank again, and we wound up in more trouble. Our dry “forever” had not lasted very long. </p>
@@ -15,4 +19,5 @@ every recovery from alcoholism began with one sober hour.</em>
 <p>The next drink will be available later, but right now, we postpone taking it at least for the present day, or moment. (Say, for the rest of this page?) </p>
 <p>The 24-hour plan is very flexible. We can start it afresh at any time, wherever we are. At home, at work, in a bar or in a hospital room, at 4:00 p.m. or at 3:00 a.m., we can decide right then not to take a drink during the forthcoming 24 hours, or five minutes. </p>
 <p>Continually renewed, this plan avoids the weakness of such methods as going on the wagon or taking a pledge. A period on the wagon and a pledge both eventually came, as planned, to an end—so we felt free to drink again. But today is always here. Life is daily; today is all we have; and anybody can go one day without drinking. </p>
-<p>First, we try living in the now just in order to stay sober—and it works. Once the idea has become a part of our thinking, we find that living life in 24-hour segments is an effective and satisfying way to handle many other matters as well.<br></p>`};
+<p>First, we try living in the now just in order to stay sober—and it works. Once the idea has become a part of our thinking, we find that living life in 24-hour segments is an effective and satisfying way to handle many other matters as well.<br></p>`
+};

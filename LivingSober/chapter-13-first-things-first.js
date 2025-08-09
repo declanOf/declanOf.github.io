@@ -1,4 +1,7 @@
-const chapter13 = {"reference": "first-things-first", "title": "First Things First",                                                                 "body": `<h1>13 First Things First</h1>
+const chapter13 = {
+	"reference": "first-things-first",
+	"title": "13. First Things First",                                                                 
+	"body": `<h1>13 First Things First</h1>
 <p>Here's an old saying that has special, strong meaning for us. Simply stated, it is this: Above all other concerns, we must remember that we cannot drink. Not drinking is the first order of business for us, anywhere, any time, under any circumstances.</p>
 <p>This is strictly a matter of survival for us. We have learned that alcoholism is a killer disease, leading to death in a large number of ways. We prefer not to activate that disease by risking a drink.</p>
 <p>Treatment of our condition, as the American Medical Association has noted, "primarily involves not taking a drink." Our experience reinforces that prescription for therapy.</p>
@@ -16,4 +19,5 @@ first</em>
 no</em>
 &nbsp;cleaning would get done, no calls made, no letters written.</p>
 <p>Then we used the same slogan in ordering our newfound sober time. We tried planning the day's activities, arranging our tasks in order of importance, and never making the schedule too tight. We kept in mind another "first," our general health, because we knew that getting overtired or skipping meals could be dangerous.</p>
-<p>During active alcoholism, many of us led pretty disorganized lives, and the confusion often made us feel unsettled or even desperate. Learning not to drink is facilitated, we have discovered, by introducing some order into each day—but being realistic and keeping our plan flexible. The rhythm of our own special routine has a soothing effect, and an apt principle around which to organize some orderliness is—yes, "First Things First."</p>`};
+<p>During active alcoholism, many of us led pretty disorganized lives, and the confusion often made us feel unsettled or even desperate. Learning not to drink is facilitated, we have discovered, by introducing some order into each day—but being realistic and keeping our plan flexible. The rhythm of our own special routine has a soothing effect, and an apt principle around which to organize some orderliness is—yes, "First Things First."</p>`
+};

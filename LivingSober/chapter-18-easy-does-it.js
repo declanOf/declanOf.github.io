@@ -1,4 +1,7 @@
-const chapter18 = {"reference": "easy-does-it", "title": "Easy Does It",                                                                 "body": `<h1>18 Easy Does It</h1>
+const chapter18 = {
+	"reference": "easy-does-it",
+	"title": "18. Easy Does It",                                                                 
+	"body": `<h1>18 Easy Does It</h1>
 <p>Have you just this minute finished reading the previous section, and are you now rushing right into this one? Why? It may be that you need to put into practice the slogan "Easy Does It."</p>
 <p>As alcoholics, we often tended to gulp drinks faster than other people did. And we were seldom likely to overlook the last few drops in the cocktail glass, or the last few slugs in the bottle.</p>
 <p>Many of us have been amused at our seeming inability, even after many years of sobriety, to walk away from a half-finished cup of coffee or glass of soda. We sometimes find ourselves gulping the last swallow of a nonalcoholic drink, as if...</p>
@@ -30,4 +33,5 @@ have</em>
 <p>Then she went on, "And that was day before yesterday!"</p>
 <p>Our heart goes out to anyone in that dire condition. We know all too well how it feels. Help did arrive for the excited caller, within the hour, and now she tells the story on herself as an example of what she used to be like. It is almost incredible, when you see how composed yet energetic, how calm but alert she is now.</p>
 <p>If a strong inner core of peace, patience, and contentment looks at all desirable to you, it can be had.</p>
-<p>Remind yourself once in a while that maybe "Easy Does It" is this day's ideal speed. The change can start right now, remember?</p>`};
+<p>Remind yourself once in a while that maybe "Easy Does It" is this day's ideal speed. The change can start right now, remember?</p>`
+};

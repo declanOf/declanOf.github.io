@@ -1,4 +1,7 @@
-const chapter09 = {"reference": "eating-or-drinking-something-usually-sweet", "title": "Eating or Drinking Something - usually sweet",                                                                 "body": `<h1>9 Eating or Drinking Something - usually sweet</h1>
+const chapter09 = {
+	"reference": "eating-or-drinking-something-usually-sweet",
+	"title": "9. Eating or Drinking Something - usually sweet",                                                                 
+	"body": `<h1>9 Eating or Drinking Something - usually sweet</h1>
 <p>Can you imagine drinking a bourbon and soda right after a chocolate malted? Or a beer on top of a piece of cake with icing?</p>
 <p>If you're not too ill to read on, you will agree that they don't sound exactly made for each other.</p>
 <p>In one way, that is what this portion of our experience is about. Many of us have learned that something sweet-tasting, or almost any nourishing food or snack, seems to dampen a bit the desire for a drink. So, from time to time, we remind each other never to get too hungry.</p>
@@ -15,4 +18,5 @@ taste</em>
 <p></p>
 <p>To be sure, a few ice cream or candy "addicts" do find in their first sober months a bulge or roll developing here and there, in the usual wrong places. But that seems a small price to pay for release from active alcoholism. Better to be chubby or pleasingly plump than drunk, right? Did you ever hear of anyone being arrested for "fat driving"?</p>
 <p>Anyhow, with a little patience and sound judgment, the weight situation usually straightens itself out, our experience proves. If it does not, or if you have a chronic, serious obesity or underweight problem, you probably should consult a medical expert who not only knows weight problems, but also understands alcoholism. We never find any conflict between A.A experience and sound medical advice given by a physician sophisticated about alcoholism.</p>
-<p>So the next time the temptation to drink arises, let's eat a little, or sip something gooey. At least, that puts off the drink for an hour or two, so we can take another step toward recovery... maybe the one suggested in the next section.</p>`};
+<p>So the next time the temptation to drink arises, let's eat a little, or sip something gooey. At least, that puts off the drink for an hour or two, so we can take another step toward recovery... maybe the one suggested in the next section.</p>`
+};

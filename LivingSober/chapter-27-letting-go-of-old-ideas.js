@@ -1,4 +1,7 @@
-const chapter27 = {"reference": "letting-go-of-old-ideas", "title": "Letting Go of Old Ideas",                                                                 "body": `<h1>27 Letting Go of Old Ideas</h1>
+const chapter27 = {
+	"reference": "letting-go-of-old-ideas",
+	"title": "Letting Go of Old Ideas",                                                                 
+	"body": `<h1>27 Letting Go of Old Ideas</h1>
 <br>
 The ideas that got so deeply embedded in our lives during drinking do not all disappear quickly, as if by magic, the moment we start keeping the plug in the jug. Our days of wine and "Sweet Adeline" may be gone, but the malady lingers on.</p>
 <br>
@@ -56,4 +59,5 @@ It is now well established that willpower all by itself is about as effective a 
 <br>
 But we finally asked ourselves: Wouldn't it be more intelligent to seek out and tap a strength greater than our own than to persist in our futile solo efforts, after they had time and again been proved ineffective? We still don't think it is very smart to keep trying to see in the dark if you can simply switch on a lamp and use its light We didn't get sober entirely on our own. That isn't the way we learned to stay sober. And the full enjoyment of living sober isn't a one-person job, either.</p>
 <br>
-When we could look, even temporarily, at just a few new ideas different from our old ones, we had already begun to make a sturdy start toward a happy, healthier new life. It happened just that way to thousands and thousands of us who deeply believed it never could.</p>`};
+When we could look, even temporarily, at just a few new ideas different from our old ones, we had already begun to make a sturdy start toward a happy, healthier new life. It happened just that way to thousands and thousands of us who deeply believed it never could.</p>`
+};

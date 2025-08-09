@@ -1,4 +1,7 @@
-const chapter20 = {"reference": "remembering-your-last-drunk", "title": "Remembering Your Last Drunk",                                                                 "body": `<h1>20 Remembering Your Last Drunk</h1>
+const chapter20 = {
+	"reference": "remembering-your-last-drunk",
+	"title": "20. Remembering Your Last Drunk",                                                                 
+	"body": `<h1>20 Remembering Your Last Drunk</h1>
 <p>That's not a typographical error. The word is "drunk," not "drink," as you'll see.</p>
 <p>"A drink" is a term which has awakened pleasurable echoes and anticipations in millions of people for centuries.</p>
 <p>Depending on our age, and on the circumstances which surrounded our first experiences with alcohol, we all have various memories and hopes (sometimes, anxieties) aroused by the thought of a cool beer, a bullshot, a gin and tonic, a boilermaker, a sip of wine, or whatever.</p>
@@ -20,4 +23,5 @@ for us</em>
 &nbsp;no longer means music and gay laughter and flirtations. It means sickness and sorrow.</p>
 <p>One AA member puts it this way: "I know now that stopping in for a drink will never again be—for me—simply killing a few minutes and leaving a buck on the bar. In exchange for that drink, what I would plunk down now is my bank account, my family, our home, our car, my job, my sanity, and probably my life. It's too big a price, too big a risk."</p>
 <p></p>
-<p>He remembers his last drunk, not his first drink.</p>`};
+<p>He remembers his last drunk, not his first drink.</p>`
+};

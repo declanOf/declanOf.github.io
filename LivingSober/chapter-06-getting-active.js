@@ -1,4 +1,7 @@
-const chapter06 = {"reference": "getting-active", "title": "Getting Active",                                                                 "body": `<h1>6 Getting Active</h1>
+const chapter06 = {
+	"reference": "getting-active",
+	"title": "6. Getting Active",                                                                 
+	"body": `<h1>6 Getting Active</h1>
 <p>It is very hard just to sit still trying not to do a certain thing, or not even to think about it.&nbsp; It's much easier to get active and do something else—other than the act we're trying to avoid.</p>
 <p>So it is with drinking. Simply trying to avoid a drink (or not think of one), all by itself, doesn't seem to be enough. The more we think about the drink we're trying to keep away from, the more it occupies our mind, of course. And that's no good. It's better to get busy with something, almost anything, that will use our mind and channel our energy toward health.</p>
 <p>Thousands of us wondered what we would do, once we stopped drinking, with all that time on our hands. Sure enough, when we did stop, all those hours we had once spent planning, getting our drinks, drinking, and recovering from its immediate effects, suddenly turned into big, empty holes of time that had to be filled somehow.</p>
@@ -89,4 +92,5 @@ Taking a fling at something frivolous!</em>
 <p></p>
 <p>Fill this one in for yourself. Let's hope the list above sparked an idea for you which is different from all of those listed.... It did? Good! Go to it.<br>
 <br></p>
-<p>One word of caution, though. Some of us find we have a tendency to go overboard, and try too many things at once. We have a good brake for that, which you'll read about on page 44. It's called "Easy Does It."</p>`};
+<p>One word of caution, though. Some of us find we have a tendency to go overboard, and try too many things at once. We have a good brake for that, which you'll read about on page 44. It's called "Easy Does It."</p>`
+};

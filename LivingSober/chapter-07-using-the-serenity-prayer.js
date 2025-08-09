@@ -1,4 +1,7 @@
-const chapter07 = {"reference": "using-the-serenity-prayer", "title": "Using the Serenity Prayer",                                                                 "body": `<h1>7 Using the Serenity Prayer</h1>
+const chapter07 = {
+	"reference": "using-the-serenity-prayer",
+	"title": "7. Using the Serenity Prayer",                                                                 
+	"body": `<h1>7 Using the Serenity Prayer</h1>
 <p>On the walls of thousands of AA meeting rooms, in any of a variety of languages, this invocation can be seen:</p>
 <p>God grant us&nbsp;</p>
 <p>The serenity to accept&nbsp;the things we cannot change,&nbsp;</p>
@@ -30,4 +33,5 @@ By way of example: "I hate this job. Do I have to stick with it, or can I quit?"
 <p>Or the answer may be: "Let's face it—this is no time for me to go job-hunting, not with a family to support. Besides, here I am six weeks sober, and my AA. friends say I'd better not start making any drastic changes in my life just yet—better concentrate on not taking that first drink, and wait till I&nbsp;get my head straightened out. Okay, I can't&nbsp;change the job right now. But maybe I can change my own attitude. Let's see. How can I learn to accept the job serenely?"</p>
 <br>
 That word "serenity" looked like an impossible goal when we first saw the prayer. In fact, if serenity meant apathy, bitter resignation, or stolid endurance, then we didn't even want to aim at it. But we found that serenity meant no such thing. When it comes to us now, it is more as plain recognition—a clear-eyed, realistic way of seeing the world, accompanied by inner peace and strength. Serenity is like a gyroscope that lets us keep our balance no matter what turbulence swirls around us. And that is a state of mind worth aiming for.
-<br>`};
+<br>`
+};

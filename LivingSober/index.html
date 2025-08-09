@@ -102,16 +102,35 @@
 
 						$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
 
-						$("button#increase-font-size").on("click", increaseFontSize);
-
-						$("button#decrease-font-size").on("click", decreaseFontSize);
-
+						$("div#font-size").slider(
+							{
+								value: 0,
+								min: -10,
+								max: 10,
+								step: 1,
+								slide: changeFontSize
+							}
+						);
 						changeChapter(0, "Living Sober");
 					} catch (error) {
 						alert(error);
 					}
 				}
 			);
+
+			const changeFontSize = (event, ui) => {
+				const fontSize = ui.value;
+
+				let newFontClass = "";
+
+				if (fontSize < 0) {
+					newFontClass = "font-minus-" + (Math.abs(fontSize) * 10) + "-percent";
+				} else if (fontSize > 0) {
+					newFontClass = "font-plus-" + (fontSize * 10) + "-percent";
+				}
+
+				$("div#chapter-content").attr("class", newFontClass);
+			};
 
 			const changeChapter = (chapterId, titleOverwrite = null) => {
 				if (chapterId < 0 || chapterId >= chapters.length) {
@@ -134,148 +153,6 @@
 
 				$("button#next").css("opacity", (chapterId === chapters.length - 1) ? "0.2" : "1.0");
 			};
-
-			const increaseFontSize = (event) => {
-				const oldFontClass = $("div#chapter-content").attr("class");
-
-				let newFontClass = oldFontClass;
-
-				switch (oldFontClass) {
-					case "font-minus-100-percent":
-						newFontClass = "font-minus-90-percent";
-					break;
-					case "font-minus-90-percent":
-						newFontClass = "font-minus-80-percent";
-					break;
-					case "font-minus-80-percent":
-						newFontClass = "font-minus-70-percent";
-					break;
-					case "font-minus-70-percent":
-						newFontClass = "font-minus-60-percent";
-					break;
-					case "font-minus-60-percent":
-						newFontClass = "font-minus-50-percent";
-					break;
-					case "font-minus-50-percent":
-						newFontClass = "font-minus-40-percent";
-					break;
-					case "font-minus-40-percent":
-						newFontClass = "font-minus-30-percent";
-					break;
-					case "font-minus-30-percent":
-						newFontClass = "font-minus-20-percent";
-					break;
-					case "font-minus-20-percent":
-						newFontClass = "font-minus-10-percent";
-					break;
-					case "font-minus-10-percent":
-						newFontClass = "";
-					break;
-					case "":
-						newFontClass = "font-plus-10-percent";
-					break;
-					case "font-plus-10-percent":
-						newFontClass = "font-plus-20-percent";
-					break;
-					case "font-plus-20-percent":
-						newFontClass = "font-plus-30-percent";
-					break;
-					case "font-plus-30-percent":
-						newFontClass = "font-plus-40-percent";
-					break;
-					case "font-plus-40-percent":
-						newFontClass = "font-plus-50-percent";
-					break;
-					case "font-plus-50-percent":
-						newFontClass = "font-plus-60-percent";
-					break;
-					case "font-plus-60-percent":
-						newFontClass = "font-plus-70-percent";
-					break;
-					case "font-plus-70-percent":
-						newFontClass = "font-plus-80-percent";
-					break;
-					case "font-plus-80-percent":
-						newFontClass = "font-plus-90-percent";
-					break;
-					case "font-plus-90-percent":
-						newFontClass = "font-plus-100-percent";
-					break;
-				}
-
-				$("div#chapter-content").attr("class", newFontClass);
-			}
-
-			const decreaseFontSize = (event) => {
-				const oldFontClass = $("div#chapter-content").attr("class");
-
-				let newFontClass = oldFontClass;
-
-				switch (oldFontClass) {
-					case "font-minus-90-percent":
-						newFontClass = "font-minus-100-percent";
-					break;
-					case "font-minus-80-percent":
-						newFontClass = "font-minus-90-percent";
-					break;
-					case "font-minus-70-percent":
-						newFontClass = "font-minus-80-percent";
-					break;
-					case "font-minus-60-percent":
-						newFontClass = "font-minus-70-percent";
-					break;
-					case "font-minus-50-percent":
-						newFontClass = "font-minus-60-percent";
-					break;
-					case "font-minus-40-percent":
-						newFontClass = "font-minus-50-percent";
-					break;
-					case "font-minus-30-percent":
-						newFontClass = "font-minus-40-percent";
-					break;
-					case "font-minus-20-percent":
-						newFontClass = "font-minus-30-percent";
-					break;
-					case "font-minus-10-percent":
-						newFontClass = "font-minus-20-percent";
-					break;
-					case "":
-						newFontClass = "font-minus-10-percent";
-					break;
-					case "font-plus-10-percent":
-						newFontClass = "";
-					break;
-					case "font-plus-20-percent":
-						newFontClass = "font-plus-10-percent";
-					break;
-					case "font-plus-30-percent":
-						newFontClass = "font-plus-20-percent";
-					break;
-					case "font-plus-40-percent":
-						newFontClass = "font-plus-30-percent";
-					break;
-					case "font-plus-50-percent":
-						newFontClass = "font-plus-40-percent";
-					break;
-					case "font-plus-60-percent":
-						newFontClass = "font-plus-50-percent";
-					break;
-					case "font-plus-70-percent":
-						newFontClass = "font-plus-60-percent";
-					break;
-					case "font-plus-80-percent":
-						newFontClass = "font-plus-70-percent";
-					break;
-					case "font-plus-90-percent":
-						newFontClass = "font-plus-80-percent";
-					break;
-					case "font-plus-100-percent":
-						newFontClass = "font-plus-90-percent";
-					break;
-				}
-
-				$("div#chapter-content").attr("class", newFontClass);
-			}
 
 		</script>
 		<style type="text/css">
@@ -479,25 +356,10 @@
 				text-align: center;
 				width: 100%;
 			}
-			button#increase-font-size,
-			button#decrease-font-size {
-				color: rgb(78, 78, 255);
-				border: none;
-				border-radius: 10px;
-				font-size: 4em;
-				padding-top: 0;
-				padding-bottom: 0;
-				font-weight: 700;
-				font-family: Helvetica;
-				line-height: 1.25em;
-			}
 
-			button#decrease-font-size {
-				left: 25%;
-			}
-
-			button#increase-font-size {
-				right: 25%;
+			div#font-size {
+				left: 20%;
+				width: 60%;
 			}
 
 			div#information-dialog {
@@ -546,9 +408,7 @@
 		</div>
 		<button id="information">ℹ️</button>
 		<div id="font-buttons">
-			<button id="decrease-font-size">&nbsp;&nbsp;-&nbsp;&nbsp;</button>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<button id="increase-font-size">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
+			<div id="font-size"></div>
 		</div>
 		<div id="information-dialog">
 			<p>

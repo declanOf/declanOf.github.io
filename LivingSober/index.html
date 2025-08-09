@@ -141,35 +141,65 @@
 				let newFontClass = oldFontClass;
 
 				switch (oldFontClass) {
-					case "font-minus-25-percent":
+					case "font-minus-100-percent":
+						newFontClass = "font-minus-90-percent";
+					break;
+					case "font-minus-90-percent":
+						newFontClass = "font-minus-80-percent";
+					break;
+					case "font-minus-80-percent":
+						newFontClass = "font-minus-70-percent";
+					break;
+					case "font-minus-70-percent":
+						newFontClass = "font-minus-60-percent";
+					break;
+					case "font-minus-60-percent":
+						newFontClass = "font-minus-50-percent";
+					break;
+					case "font-minus-50-percent":
+						newFontClass = "font-minus-40-percent";
+					break;
+					case "font-minus-40-percent":
+						newFontClass = "font-minus-30-percent";
+					break;
+					case "font-minus-30-percent":
 						newFontClass = "font-minus-20-percent";
 					break;
 					case "font-minus-20-percent":
-						newFontClass = "font-minus-15-percent";
-					break;
-					case "font-minus-15-percent":
 						newFontClass = "font-minus-10-percent";
 					break;
 					case "font-minus-10-percent":
-						newFontClass = "font-minus-05-percent";
-					break;
-					case "font-minus-05-percent":
 						newFontClass = "";
 					break;
 					case "":
-						newFontClass = "font-plus-05-percent";
-					break;
-					case "font-plus-05-percent":
 						newFontClass = "font-plus-10-percent";
 					break;
 					case "font-plus-10-percent":
-						newFontClass = "font-plus-15-percent";
-					break;
-					case "font-plus-15-percent":
 						newFontClass = "font-plus-20-percent";
 					break;
 					case "font-plus-20-percent":
-						newFontClass = "font-plus-25-percent";
+						newFontClass = "font-plus-30-percent";
+					break;
+					case "font-plus-30-percent":
+						newFontClass = "font-plus-40-percent";
+					break;
+					case "font-plus-40-percent":
+						newFontClass = "font-plus-50-percent";
+					break;
+					case "font-plus-50-percent":
+						newFontClass = "font-plus-60-percent";
+					break;
+					case "font-plus-60-percent":
+						newFontClass = "font-plus-70-percent";
+					break;
+					case "font-plus-70-percent":
+						newFontClass = "font-plus-80-percent";
+					break;
+					case "font-plus-80-percent":
+						newFontClass = "font-plus-90-percent";
+					break;
+					case "font-plus-90-percent":
+						newFontClass = "font-plus-100-percent";
 					break;
 				}
 
@@ -182,35 +212,65 @@
 				let newFontClass = oldFontClass;
 
 				switch (oldFontClass) {
-					case "font-minus-20-percent":
-						newFontClass = "font-minus-25-percent";
+					case "font-minus-90-percent":
+						newFontClass = "font-minus-100-percent";
 					break;
-					case "font-minus-15-percent":
-						newFontClass = "font-minus-20-percent";
+					case "font-minus-80-percent":
+						newFontClass = "font-minus-90-percent";
+					break;
+					case "font-minus-70-percent":
+						newFontClass = "font-minus-80-percent";
+					break;
+					case "font-minus-60-percent":
+						newFontClass = "font-minus-70-percent";
+					break;
+					case "font-minus-50-percent":
+						newFontClass = "font-minus-60-percent";
+					break;
+					case "font-minus-40-percent":
+						newFontClass = "font-minus-50-percent";
+					break;
+					case "font-minus-30-percent":
+						newFontClass = "font-minus-40-percent";
+					break;
+					case "font-minus-20-percent":
+						newFontClass = "font-minus-30-percent";
 					break;
 					case "font-minus-10-percent":
-						newFontClass = "font-minus-15-percent";
-					break;
-					case "font-minus-05-percent":
-						newFontClass = "font-minus-10-percent";
+						newFontClass = "font-minus-20-percent";
 					break;
 					case "":
-						newFontClass = "font-minus-05-percent";
-					break;
-					case "font-plus-05-percent":
-						newFontClass = "";
+						newFontClass = "font-minus-10-percent";
 					break;
 					case "font-plus-10-percent":
-						newFontClass = "font-plus-05-percent";
-					break;
-					case "font-plus-15-percent":
-						newFontClass = "font-plus-10-percent";
+						newFontClass = "";
 					break;
 					case "font-plus-20-percent":
-						newFontClass = "font-plus-15-percent";
+						newFontClass = "font-plus-10-percent";
 					break;
-					case "font-plus-25-percent":
+					case "font-plus-30-percent":
 						newFontClass = "font-plus-20-percent";
+					break;
+					case "font-plus-40-percent":
+						newFontClass = "font-plus-30-percent";
+					break;
+					case "font-plus-50-percent":
+						newFontClass = "font-plus-40-percent";
+					break;
+					case "font-plus-60-percent":
+						newFontClass = "font-plus-50-percent";
+					break;
+					case "font-plus-70-percent":
+						newFontClass = "font-plus-60-percent";
+					break;
+					case "font-plus-80-percent":
+						newFontClass = "font-plus-70-percent";
+					break;
+					case "font-plus-90-percent":
+						newFontClass = "font-plus-80-percent";
+					break;
+					case "font-plus-100-percent":
+						newFontClass = "font-plus-90-percent";
 					break;
 				}
 
@@ -317,45 +377,84 @@
 				overflow-x: scroll;
 			}
 
-			div#chapter-content.font-minus-25-percent {
-				font-size: calc(1.25em * 0.75);
+			div#chapter-content.font-minus-100-percent {
+				font-size: calc(1.25em * 0.01);
 			}
 
+			div#chapter-content.font-minus-90-percent {
+				font-size: calc(1.25em * 0.10);
+			}
+
+			div#chapter-content.font-minus-80-percent {
+				font-size: calc(1.25em * 0.20);
+			}
+
+			div#chapter-content.font-minus-70-percent {
+				font-size: calc(1.25em * 0.30);
+			}
+
+			div#chapter-content.font-minus-60-percent {
+				font-size: calc(1.25em * 0.40);
+			}
+
+			div#chapter-content.font-minus-50-percent {
+				font-size: calc(1.25em * 0.50);
+			}
+
+			div#chapter-content.font-minus-40-percent {
+				font-size: calc(1.25em * 0.60);
+			}
+
+			div#chapter-content.font-minus-30-percent {
+				font-size: calc(1.25em * 0.70);
+			}
 
 			div#chapter-content.font-minus-20-percent {
 				font-size: calc(1.25em * 0.80);
-			}
-
-			div#chapter-content.font-minus-15-percent {
-				font-size: calc(1.25em * 0.85);
 			}
 
 			div#chapter-content.font-minus-10-percent {
 				font-size: calc(1.25em * 0.9);
 			}
 
-			div#chapter-content.font-minus-05-percent {
-				font-size: calc(1.25em * 0.95);
-			}
-
-			div#chapter-content.font-plus-05-percent {
-				font-size: calc(1.25em * 1.05);
-			}
-
 			div#chapter-content.font-plus-10-percent {
 				font-size: calc(1.25em * 1.10);
-			}
-
-			div#chapter-content.font-plus-15-percent {
-				font-size: calc(1.25em * 1.15);
 			}
 
 			div#chapter-content.font-plus-20-percent {
 				font-size: calc(1.25em * 1.20);
 			}
 
-			div#chapter-content.font-plus-25-percent {
-				font-size: calc(1.25em * 1.25);
+			div#chapter-content.font-plus-30-percent {
+				font-size: calc(1.25em * 1.30);
+			}
+
+			div#chapter-content.font-plus-40-percent {
+				font-size: calc(1.25em * 1.40);
+			}
+
+			div#chapter-content.font-plus-50-percent {
+				font-size: calc(1.25em * 1.50);
+			}
+
+			div#chapter-content.font-plus-60-percent {
+				font-size: calc(1.25em * 1.60);
+			}
+
+			div#chapter-content.font-plus-70-percent {
+				font-size: calc(1.25em * 1.70);
+			}
+
+			div#chapter-content.font-plus-80-percent {
+				font-size: calc(1.25em * 1.80);
+			}
+
+			div#chapter-content.font-plus-90-percent {
+				font-size: calc(1.25em * 1.90);
+			}
+
+			div#chapter-content.font-plus-100-percent {
+				font-size: calc(1.25em * 2.00);
 			}
 
 			div#chapter-content ul {

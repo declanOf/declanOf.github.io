@@ -59,6 +59,21 @@
 
 			$(document).ready(
 				() => {
+
+					$("button#information").on("click", (event) => {
+						$("div#information-dialog").dialog({
+							title: "Information",
+							modal: true,
+							width: "80%",
+							height: "auto",
+							buttons: {
+								"Close": function() {
+									$(this).dialog("close");
+								}
+							}
+						});
+					});
+
 					chapters = [
 						forwardAboutThatTitle, prefixWhyNotDrinking, chapter01, chapter02, chapter03, chapter04, chapter05, chapter06, chapter07, chapter08, chapter09, chapter10, chapter11, chapter12, chapter13, chapter14, chapter15, chapter16, chapter17, chapter18, chapter19, chapter20, chapter21, chapter22, chapter23, chapter24, chapter25, chapter26, chapter27, chapter28, chapter29, chapter30, chapter31
 					]
@@ -92,7 +107,7 @@
 
 				currentChapterId = chapterId;
 
-				$("div#chapter-content").html(chapters[chapterId].body);
+				$("div#chapter-content").html(chapters[chapterId].body + "<br><br><br>");
 
 				$("div#chapter-content").animate({ scrollTop: 0 }, "slow");
 
@@ -181,6 +196,33 @@
 			div#accordion ul li {
 				font-size: 3em;
 			}
+
+			button#information {
+				position: fixed;
+				bottom: .5em;
+				right: .5em;
+				font-size: 3em;
+				z-index: 100;
+				background-color: transparent;
+				border: none;
+				z-index: 1000;
+			}
+
+			div#information-dialog {
+				display: none;
+			}
+
+			footer#fade-footer {
+				position:fixed;
+				height: 3.5em;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				text-align: center;
+				font-size: 1.5em;
+				background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,255,255, 1));
+				z-index: 999;
+			}
 		</style>
 	</head>
 
@@ -196,5 +238,22 @@
 			<button id="next">Next &gt;</button>
 		</div>
 		<div id="chapter-content"></div>
+		<button id="information">ℹ️</button>
+		<div id="information-dialog">
+			<p>
+				This is a digital version of the 'Living Sober' booklet, which provides practical advice
+				for those in recovery from alcoholism. Use the navigation buttons to explore the chapters.
+			</p>
+			<p>
+				This booklet is available for purchase from Alcoholics Anonymous.
+				<br>For more information, visit <a target="_blank" href="https://www.aa.org/living-sober">AA's Living Sober page</a>.
+			</p>
+			<p>
+				Copyright © 2024 Alcoholics Anonymous World Services, Inc.
+			</p>
+		</div>
+			<footer id="fade-footer">
+&nbsp;
+			</footer>
 	</body>
 </html>

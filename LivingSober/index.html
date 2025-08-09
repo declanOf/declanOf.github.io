@@ -116,9 +116,9 @@
 				$("#accordion h3").html("🔽 " + title)
 				$("#accordion").accordion("option", "active", false);
 
-				$("button#prev").attr("disabled", (chapterId === 0));
+				$("button#prev").css("opacity", (chapterId === 0) ? "0.2" : "1.0");
 
-				$("button#next").attr("disabled", (chapterId === chapters.length - 1));
+				$("button#next").css("opacity", (chapterId === chapters.length - 1) ? "0.2" : "1.0");
 			};
 		</script>
 		<style type="text/css">

@@ -96,11 +96,11 @@
 
 					$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
 
-					changeChapter(0);
+					changeChapter(0, "Chapters");
 				}
 			);
 
-			const changeChapter = (chapterId) => {
+			const changeChapter = (chapterId, titleOverwrite = null) => {
 				if (chapterId < 0 || chapterId >= chapters.length) {
 					return;
 				}
@@ -111,7 +111,9 @@
 
 				$("div#chapter-content").animate({ scrollTop: 0 }, "slow");
 
-				$("#accordion h3").html("🔽 " + chapters[chapterId].title)
+				const title = (titleOverwrite !== null) ? titleOverwrite : chapters[chapterId].title;
+
+				$("#accordion h3").html("🔽 " + title)
 				$("#accordion").accordion("option", "active", false);
 
 				$("button#prev").attr("disabled", (chapterId === 0));

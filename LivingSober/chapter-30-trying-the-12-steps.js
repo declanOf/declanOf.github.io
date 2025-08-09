@@ -1,6 +1,6 @@
 const chapter30 = {
 	"reference": "trying-the-12-steps",
-	"title": "Trying the 12 Steps",                                                                 
+	"title": "30. Trying the 12 Steps",
 	"body": `<h1>30 Trying the 12 Steps</h1>
 <p>"When all else fails," said the old country doctor, "follow directions."<br>
 We have not talked about the Twelve Steps offered by AA as a program of recovery from alcoholism, and they are not going to be listed or explained here, because anyone curious about them can find them elsewhere. Their origin is striking, however.</p>

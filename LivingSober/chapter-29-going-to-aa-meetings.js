@@ -1,6 +1,6 @@
 const chapter29 = {
 	"reference": "going-to-aa-meetings",
-	"title": "Going to AA Meetings",                                                                 
+	"title": "29. Going to AA Meetings",
 	"body": `<h1>29 Going to AA Meetings</h1>
 <p>Long before this booklet was even thought of, every single idea in it and many more suggestions for living sober were learned and proved successful by hundreds of thousands of alcoholics. We did this not just by reading, but also by talking to each other. At first, we mostly listened.</p>
 <p>You can easily do the same thing, free, and you don't have to "join" anything.</p>

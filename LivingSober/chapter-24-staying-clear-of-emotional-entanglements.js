@@ -1,6 +1,6 @@
 const chapter24 = {
 	"reference": "staying-clear-of-emotional-entanglements",
-	"title": "Steering Clear of Emotional Entanglements",                                                                 
+	"title": "24. Steering Clear of Emotional Entanglements",
 	"body": `<h1>24 Steering Clear of Emotional Entanglements</h1>
 <p>Falling in love with your doctor or nurse or a fellow patient is an old romantic story. Recovering alcoholics are susceptible to the same fever. In fact, alcoholism does not seem to bring immunity from any known human condition.</p>
 <p>Sorrow is born in the hasty heart, an old saw goes. Other troubles, including an alcoholic bout, can be, too.</p>

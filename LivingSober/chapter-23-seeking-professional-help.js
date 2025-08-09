@@ -1,6 +1,6 @@
 const chapter23 = {
 	"reference": "seeking-professional-help",
-	"title": "Seeking Professional Help",                                                                 
+	"title": "23. Seeking Professional Help",
 	"body": `<h1>23 Seeking Professional Help</h1>
 <p>Probably every recovered alcoholic has needed and sought professional help of the sort AA does not provide. For instance, the first two AA members, its co-founders, needed and got help from physicians, hospitals, and clergymen.</p>
 <p>Once we have started staying sober, a lot of our problems seem to disappear. But certain matters remain, or arise, which do require expert professional attention, such as that of an obstetrician, a chiropodist, a lawyer, a chest expert, a dentist, a dermatologist, or a psychological counselor of some kind.</p>

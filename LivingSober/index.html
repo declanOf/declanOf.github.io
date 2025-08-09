@@ -61,50 +61,53 @@
 
 			$(document).ready(
 				() => {
-					$("button#information").on("click", (event) => {
-						$("div#information-dialog").dialog({
-							title: "Information",
-							modal: true,
-							width: "80%",
-							height: "auto",
-							buttons: {
-								"Close": function() {
-									$(this).dialog("close");
+					try
+					{
+						$("button#information").on("click", (event) => {
+							$("div#information-dialog").dialog({
+								title: "Information",
+								modal: true,
+								width: "80%",
+								height: "auto",
+								buttons: {
+									"Close": function() {
+										$(this).dialog("close");
+									}
 								}
-							}
+							});
 						});
-					});
 
-					chapters = [
-						forwardAboutThatTitle, prefixWhyNotDrinking, chapter01, chapter02, chapter03, chapter04, chapter05, chapter06, chapter07, chapter08, chapter09, chapter10, chapter11, chapter12, chapter13, chapter14, chapter15, chapter16, chapter17, chapter18, chapter19, chapter20, chapter21, chapter22, chapter23, chapter24, chapter25, chapter26, chapter27, chapter28, chapter29, chapter30, chapter31, chapter32, appendix
-					]
+						chapters = [
+							forwardAboutThatTitle, prefixWhyNotDrinking, chapter01, chapter02, chapter03, chapter04, chapter05, chapter06, chapter07, chapter08, chapter09, chapter10, chapter11, chapter12, chapter13, chapter14, chapter15, chapter16, chapter17, chapter18, chapter19, chapter20, chapter21, chapter22, chapter23, chapter24, chapter25, chapter26, chapter27, chapter28, chapter29, chapter30, chapter31, chapter32, appendix
+						]
 
-					let newContent = "";
+						let newContent = "";
 
-					chapters.forEach((chapter, idx) => {
-						const chapterNumber = (idx < 2 || idx === chapters.length - 1) ? "&nbsp;" : (idx - 1).toString();
-						newContent += `<dt>${chapterNumber}</dt><dd><a class="show-chapter" attrId="${idx}">${chapter.title}</a></dd>`;
-					});
+						chapters.forEach((chapter, idx) => {
+							const chapterNumber = (idx < 2 || idx === chapters.length - 1) ? "&nbsp;" : (idx - 1).toString();
+							newContent += `<dt>${chapterNumber}</dt><dd><a class="show-chapter" attrId="${idx}">${chapter.title}</a></dd>`;
+						});
 
-					$("div#accordion dl.toc").append(newContent);
+						$("div#accordion dl.toc").append(newContent);
 
-					$("#accordion").accordion({"collapsible": true, "active": false});
+						$("#accordion").accordion({"collapsible": true, "active": false});
 
-					$(".show-chapter").on("click", (event) => {
-						event.preventDefault();
+						$(".show-chapter").on("click", (event) => {
+							event.preventDefault();
 
-						changeChapter(parseInt($(event.target).attr("attrId")));
-					})
+							changeChapter(parseInt($(event.target).attr("attrId")));
+						})
 
-					$("button#prev").on("click", (event) => changeChapter(currentChapterId - 1));
+						$("button#prev").on("click", (event) => changeChapter(currentChapterId - 1));
 
-					$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
+						$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
 
-					$("button#increase-font-size").on("click", increaseFontSize);
+						$("button#increase-font-size").on("click", increaseFontSize);
 
-					$("button#decrease-font-size").on("click", decreaseFontSize);
-
-					changeChapter(0, "Chapters");
+						$("button#decrease-font-size").on("click", decreaseFontSize);
+					} catch (error) {
+						alert(error);
+					}
 				}
 			);
 

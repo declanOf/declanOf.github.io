@@ -61,7 +61,6 @@
 
 			$(document).ready(
 				() => {
-
 					$("button#information").on("click", (event) => {
 						$("div#information-dialog").dialog({
 							title: "Information",
@@ -101,6 +100,10 @@
 
 					$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
 
+					$("button#increase-font-size").on("click", increaseFontSize);
+
+					$("button#decrease-font-size").on("click", decreaseFontSize);
+
 					changeChapter(0, "Chapters");
 				}
 			);
@@ -112,7 +115,7 @@
 
 				currentChapterId = chapterId;
 
-				$("div#chapter-content").html(chapters[chapterId].body + "<br><br><br>");
+				$("div#chapter-content").html(chapters[chapterId].body + "<br><br><br><br><br>");
 
 				$("div#chapter-content").animate({ scrollTop: 0 }, "slow");
 
@@ -126,6 +129,89 @@
 
 				$("button#next").css("opacity", (chapterId === chapters.length - 1) ? "0.2" : "1.0");
 			};
+
+			const increaseFontSize = (event) => {
+				const oldFontClass = $("div#chapter-content").attr("class");
+
+				let newFontClass = oldFontClass;
+
+				switch (oldFontClass) {
+					case "font-minus-25-percent":
+						newFontClass = "font-minus-20-percent";
+					break;
+					case "font-minus-20-percent":
+						newFontClass = "font-minus-15-percent";
+					break;
+					case "font-minus-15-percent":
+						newFontClass = "font-minus-10-percent";
+					break;
+					case "font-minus-10-percent":
+						newFontClass = "font-minus-05-percent";
+					break;
+					case "font-minus-05-percent":
+						newFontClass = "";
+					break;
+					case "":
+						newFontClass = "font-plus-05-percent";
+					break;
+					case "font-plus-05-percent":
+						newFontClass = "font-plus-10-percent";
+					break;
+					case "font-plus-10-percent":
+						newFontClass = "font-plus-15-percent";
+					break;
+					case "font-plus-15-percent":
+						newFontClass = "font-plus-20-percent";
+					break;
+					case "font-plus-20-percent":
+						newFontClass = "font-plus-25-percent";
+					break;
+				}
+
+				$("div#chapter-content").attr("class", newFontClass);
+			}
+
+			const decreaseFontSize = (event) => {
+				const oldFontClass = $("div#chapter-content").attr("class");
+
+				let newFontClass = oldFontClass;
+
+				switch (oldFontClass) {
+					case "font-minus-20-percent":
+						newFontClass = "font-minus-25-percent";
+					break;
+					case "font-minus-15-percent":
+						newFontClass = "font-minus-20-percent";
+					break;
+					case "font-minus-10-percent":
+						newFontClass = "font-minus-15-percent";
+					break;
+					case "font-minus-05-percent":
+						newFontClass = "font-minus-10-percent";
+					break;
+					case "":
+						newFontClass = "font-minus-05-percent";
+					break;
+					case "font-plus-05-percent":
+						newFontClass = "";
+					break;
+					case "font-plus-10-percent":
+						newFontClass = "font-plus-05-percent";
+					break;
+					case "font-plus-15-percent":
+						newFontClass = "font-plus-10-percent";
+					break;
+					case "font-plus-20-percent":
+						newFontClass = "font-plus-15-percent";
+					break;
+					case "font-plus-25-percent":
+						newFontClass = "font-plus-20-percent";
+					break;
+				}
+
+				$("div#chapter-content").attr("class", newFontClass);
+			}
+
 		</script>
 		<style type="text/css">
 			#accordion-container {
@@ -138,6 +224,7 @@
 				white-space: nowrap;
 			  	overflow: hidden;
 			  	text-overflow: ellipsis;
+				font-size: 4em;
 			}
 
 			#accordion dl.toc {
@@ -149,7 +236,7 @@
 				z-index: 50;
 				bottom: 0;
 				overflow-y: scroll;
-				padding-bottom:4em;
+				padding-bottom:8em;
 			}
 
 
@@ -167,6 +254,7 @@
 			dl.toc dt {
 				text-align: right;
 			}
+
 			dl.toc dt.a, dl.toc dd a {
 				cursor: pointer;
 			}
@@ -179,6 +267,7 @@
 				float: left;
 				width: calc(100% - 3em);
 			}
+
 			div#navigation {
 				position: fixed;
 				height: 3.5em;
@@ -186,6 +275,7 @@
 				width: 100%;
 				z-index: 50;
 			}
+
 			button#prev, button#next {
 				position: absolute;
 				padding-left: 2em;
@@ -205,10 +295,15 @@
 				right: 1%;
 			}
 
-			div#chapter-content {
+			div#content-container {
 				position: fixed;
-				top: 12em;
+				top: 15em;
+				overflow-y: scroll;
+				left: 1em;
+				right: 1em;
 				bottom: 0;
+			}
+			div#chapter-content {
 				left: 1em;
 				right: 1em;
 				font-family: Verdana;
@@ -217,11 +312,49 @@
 				overflow-x: scroll;
 			}
 
+			div#chapter-content.font-minus-25-percent {
+				font-size: calc(1.25em * 0.75);
+			}
+
+
+			div#chapter-content.font-minus-20-percent {
+				font-size: calc(1.25em * 0.80);
+			}
+
+			div#chapter-content.font-minus-15-percent {
+				font-size: calc(1.25em * 0.85);
+			}
+
+			div#chapter-content.font-minus-10-percent {
+				font-size: calc(1.25em * 0.9);
+			}
+
+			div#chapter-content.font-minus-05-percent {
+				font-size: calc(1.25em * 0.95);
+			}
+
+			div#chapter-content.font-plus-05-percent {
+				font-size: calc(1.25em * 1.05);
+			}
+
+			div#chapter-content.font-plus-10-percent {
+				font-size: calc(1.25em * 1.10);
+			}
+
+			div#chapter-content.font-plus-15-percent {
+				font-size: calc(1.25em * 1.15);
+			}
+
+			div#chapter-content.font-plus-20-percent {
+				font-size: calc(1.25em * 1.20);
+			}
+
+			div#chapter-content.font-plus-25-percent {
+				font-size: calc(1.25em * 1.25);
+			}
+
 			div#chapter-content ul {
 				text-align: left;
-			}
-			div#accordion h3 {
-				font-size: 4em;
 			}
 
 			button#information {
@@ -235,19 +368,43 @@
 				z-index: 1000;
 			}
 
+			button#increase-font-size,
+			button#decrease-font-size {
+				position: fixed;
+				bottom: .5em;
+				color: rgb(78, 78, 255);
+				border: none;
+				border-radius: 10px;
+				font-size: 3em;
+				padding-top: 0;
+				padding-bottom: 0;
+				font-weight: 700;
+				font-family: Helvetica;
+				line-height: 1.25em;
+				z-index: 1000;
+			}
+
+			button#decrease-font-size {
+				left: 40%;
+			}
+
+			button#increase-font-size {
+				right: 40%;
+			}
+
 			div#information-dialog {
 				display: none;
 			}
 
 			footer#fade-footer {
 				position:fixed;
-				height: 3.5em;
+				height: 5em;
 				left: 0;
 				right: 0;
 				bottom: 0;
 				text-align: center;
 				font-size: 1.5em;
-				background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,255,255, 1));
+				background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0, .8));
 				z-index: 999;
 			}
 
@@ -276,8 +433,12 @@
 			<button id="prev">◀️ Prev</button>
 			<button id="next">Next ▶️</button>
 		</div>
-		<div id="chapter-content"></div>
+		<div id="content-container">
+			<div id="chapter-content" class=""></div>
+		</div>
 		<button id="information">ℹ️</button>
+			<button id="decrease-font-size">&nbsp;&nbsp;-&nbsp;&nbsp;</button>
+			<button id="increase-font-size">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
 		<div id="information-dialog">
 			<p>
 				This is a digital version of the 'Living Sober' booklet, which provides practical advice
@@ -293,6 +454,7 @@
 				Copyright © 2024 Alcoholics Anonymous World Services, Inc.
 			</p>
 		</div>
-		<footer id="fade-footer">&nbsp;</footer>
+		<footer id="fade-footer">
+		</footer>
 	</body>
 </html>

@@ -9,5 +9,5 @@ const prefixWhyNotDrinking = {
 </div>
 <p>And we repeat: Somewhat to our surprise, staying sober turns out not to be the grim, wet-blanket experience we had expected! While we were drinking, a life without alcohol seemed like no life at all. But for most members of A.A., living sober is really living—a joyous experience. We much prefer it to the troubles we had with drinking.</p>
 <p>One more note: anyone can get sober. We have all done it lots of times. The trick is to stay and to live sober. That is what this booklet is about.</p>
-<footnote><p>From an official statement issued July 31, 1964</p></footnote>`
+<footnote><p style="font-style: italic">From an official statement issued July 31, 1964</p></footnote>`
 };

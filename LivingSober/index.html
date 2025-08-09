@@ -83,7 +83,7 @@
 					let newContent = "";
 
 					chapters.forEach((chapter, idx) => {
-						const chapterNumber = (idx < 2) ? "&nbsp;" : (idx - 1).toString();
+						const chapterNumber = (idx < 2 || idx === chapters.length - 1) ? "&nbsp;" : (idx - 1).toString();
 						newContent += `<dt>${chapterNumber}</dt><dd><a class="show-chapter" attrId="${idx}">${chapter.title}</a></dd>`;
 					});
 

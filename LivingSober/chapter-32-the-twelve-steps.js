@@ -1,5 +1,5 @@
 const chapter32 = {
-  title: "Chapter 32: The Twelve Steps",
+  title: "The Twelve Steps",
   reference: "the-twelve-steps",
   body: `<h1>32 The Twelve Steps</h1>
 <p style="text-align: center">THE TWELVE STEPS OF ALCOHOLICS ANONYMOUS</center></p>

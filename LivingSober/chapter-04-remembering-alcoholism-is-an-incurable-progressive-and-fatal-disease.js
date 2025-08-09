@@ -1,7 +1,6 @@
 const chapter04 = {
     "reference": "remembering-alcoholism-is-an-incurable-progressive-and-fatal-disease",
-    "title": "4. Remembering that alcoholism is an incurable, progressive, fatal disease",
-    
+    "title": "Remembering that alcoholism is an incurable, progressive, fatal disease",
 	"body": `<h1>4 Remembering that alcoholism is an incurable, progressive, fatal disease</h1>
 <p>Many people in the world know they cannot eat certain foods—oysters or strawberries or eggs or cucumbers or sugar or something else—without getting very uncomfortable and maybe even quite sick.&nbsp;</p>
 <p>A person with a food allergy of this kind can go around feeling a lot of self-pity, complaining to everyone that he or she is unfairly deprived, and constantly whining about not being able, or allowed, to eat something delicious. Obviously, even though we may feel cheated, it isn’t wise to ignore our own physiological makeup. If our limitations are ignored, severe discomfort or illness may result. To stay healthy and reasonably happy, we must learn to live with the bodies we have. </p>

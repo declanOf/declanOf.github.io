@@ -1,6 +1,6 @@
 const chapter14 = {
     "reference": "fending-off-loneliness",
-    "title": "14. Fending Off Loneliness",
+    "title": "Fending Off Loneliness",
 	"body": `<h1>14 Fending Off Loneliness</h1>
 <p>Alcoholism has been described as "the lonely disease," and very few recovered alcoholics argue the point. Looking back at the last years or months of our drinking, literally hundreds of thousands* of us remember feeling isolated even when we were among a lot of happy, celebrating people. We often felt a deep sense of not belonging, even when we cheerfully acted sociable.</p>
 <p>Many of us have said we drank originally to be "a part of the crowd." Many of us felt we had to drink to "get in," and to feel that we fitted in with the rest of the human race.</p>

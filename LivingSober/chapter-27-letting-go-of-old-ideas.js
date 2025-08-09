@@ -1,6 +1,6 @@
 const chapter27 = {
 	"reference": "letting-go-of-old-ideas",
-	"title": "27. Letting Go of Old Ideas",
+	"title": "Letting Go of Old Ideas",
 	"body": `<h1>27 Letting Go of Old Ideas</h1>
 <br>
 The ideas that got so deeply embedded in our lives during drinking do not all disappear quickly, as if by magic, the moment we start keeping the plug in the jug. Our days of wine and "Sweet Adeline" may be gone, but the malady lingers on.</p>

@@ -1,6 +1,6 @@
 const chapter07 = {
 	"reference": "using-the-serenity-prayer",
-	"title": "7. Using the Serenity Prayer",                                                                 
+	"title": "Using the Serenity Prayer",                                                                 
 	"body": `<h1>7 Using the Serenity Prayer</h1>
 <p>On the walls of thousands of AA meeting rooms, in any of a variety of languages, this invocation can be seen:</p>
 <p>God grant us&nbsp;</p>

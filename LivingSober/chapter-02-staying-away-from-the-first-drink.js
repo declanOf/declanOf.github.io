@@ -1,6 +1,6 @@
 const chapter02 = {
     "reference": "staying-away-from-the-first-drink",
-    "title": "2. Staying Away from the First Drink",
+    "title": "Staying Away from the First Drink",
 	"body": `<h1>2 Staying Away from the First Drink</h1>
 <p>Expressions commonly heard in A.A. are “If you don’t take that first drink, you can’t get drunk” and “One drink is too many, but twenty are not enough.”</p>
 <p>Many of us, when we first began to drink, never wanted or took more than one or two drinks. But as time went on, we increased the number. Then, in later years, we found ourselves drinking more and more, some of us getting and staying very drunk. Maybe our condition didn’t always show in our speech or our gait, but by this time we were never actually sober.</p>

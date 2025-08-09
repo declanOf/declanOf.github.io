@@ -1,6 +1,6 @@
 const chapter17 = {
 	"reference": "looking-out-for-over-elation",
-	"title": "17. Looking Out for Over-elation",                                                                 
+	"title": "Looking Out for Over-elation",                                                                 
 	"body": `<h1>17 Looking Out for Over-elation</h1>
 <p>A great many drinkers (whether alcoholics or not) change an internal state of discomfort to one of enjoyment by the single act of taking a drink. This method of fleeing from pain to pleasure has been described as "escape drinking."</p>
 <p>But thousands and thousands of us know that often we were already in a happy frame of mind when we took a drink. In fact, when we review our drinking records carefully, large numbers of us can see that we often drank in order to intensify an already jubilant mood.</p>

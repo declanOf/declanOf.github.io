@@ -1,6 +1,6 @@
 const chapter05 = {
 	"reference": "live-and-let-live",
-	"title": "5. Live and Let Live",                                                                 
+	"title": "Live and Let Live",                                                                 
 	"body": `<h1>5 Live and Let Live</h1>
 <p>The old saying “Live and Let Live” seems so commonplace, it is easy to overlook its value. Of course, one reason it has been said over and over for years is that it has proved beneficial in so many ways.&nbsp;</p>
 <p>We A.A.’s make some special uses of it to help us not drink. It particularly helps us cope with people who get on our nerves. </p>

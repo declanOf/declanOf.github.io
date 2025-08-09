@@ -1,6 +1,6 @@
 const chapter18 = {
 	"reference": "easy-does-it",
-	"title": "18. Easy Does It",                                                                 
+	"title": "Easy Does It",                                                                 
 	"body": `<h1>18 Easy Does It</h1>
 <p>Have you just this minute finished reading the previous section, and are you now rushing right into this one? Why? It may be that you need to put into practice the slogan "Easy Does It."</p>
 <p>As alcoholics, we often tended to gulp drinks faster than other people did. And we were seldom likely to overlook the last few drops in the cocktail glass, or the last few slugs in the bottle.</p>

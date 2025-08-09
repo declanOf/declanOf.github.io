@@ -80,9 +80,12 @@
 
 					let newContent = "";
 
-					chapters.forEach((chapter, idx) => newContent += `<li><a class="show-chapter" attrId="${idx}">${chapter.title}</a></li>`);
+					chapters.forEach((chapter, idx) => {
+						const chapterNumber = (idx < 2) ? "&nbsp;" : (idx - 1).toString();
+						newContent += `<dt>${chapterNumber}</dt><dd><a class="show-chapter" attrId="${idx}">${chapter.title}</a></dd>`;
+					});
 
-					$("div#accordion ul.chapters").append(newContent);
+					$("div#accordion dl.toc").append(newContent);
 
 					$("#accordion").accordion({"collapsible": true, "active": false});
 
@@ -113,7 +116,8 @@
 
 				const title = (titleOverwrite !== null) ? titleOverwrite : chapters[chapterId].title;
 
-				$("#accordion h3").html("🔽 " + title)
+				$("#accordion h3").html("🔽 " + title);
+
 				$("#accordion").accordion("option", "active", false);
 
 				$("button#prev").css("opacity", (chapterId === 0) ? "0.2" : "1.0");
@@ -134,7 +138,7 @@
 			  	text-overflow: ellipsis;
 			}
 
-			#accordion ul {
+			#accordion dl.toc {
 				overflow-y: scroll;
 				position: fixed;
 				z-index: 100;
@@ -145,6 +149,33 @@
 				overflow-y: scroll;
 			}
 
+
+			dl.toc dt, dl.toc dd {
+				line-height: 1em;
+				padding-top: .25em;
+				padding-bottom: .25em;
+				padding-left: 0;
+				padding-right: 0;
+				font-size: 3em;
+				clear: none;
+				float: left;
+			}
+
+			dl.toc dt {
+				text-align: right;
+			}
+			dl.toc dt.a, dl.toc dd a {
+				cursor: pointer;
+			}
+
+			dl.toc dt {
+				width: 2em;
+			}
+
+			dl.toc dd {
+				float: left;
+				width: calc(100% - 3em);
+			}
 			div#navigation {
 				position: fixed;
 				height: 3.5em;
@@ -183,21 +214,8 @@
 				overflow-x: scroll;
 			}
 
-			ul li {
-				list-style-type: none;
-				line-height: 2em;
-			}
-
-			ul li a {
-				cursor: pointer;
-			}
-
 			div#accordion h3 {
 				font-size: 4em;
-			}
-
-			div#accordion ul li {
-				font-size: 3em;
 			}
 
 			button#information {
@@ -245,7 +263,7 @@
 		<div id="accordion-container">
 			<div id="accordion">
 			  <h3>CHAPTERS</h3>
-			  <ul class="chapters"></ul>
+			  <dl class="toc"></dl>
 			</div>
 		</div>
 		<div id="navigation">

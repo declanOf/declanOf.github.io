@@ -1,6 +1,6 @@
 const chapter22 = {
 	"reference": "eliminating-self-pity",
-	"title": "22. Eliminating Self Pity",
+	"title": "Eliminating Self Pity",
 	"body": `<h1>22 Eliminating Self Pity</h1>
 <p>This emotion is so ugly that no one in his or her right mind wants to admit feeling it. Even when sober, many of us remain clever at hiding from ourselves the fact that we are astew in a mess of self-pity. We do not like at all being told that it shows, and we are sharp at arguing that we are experiencing some other emotion—not that loathsome poor-me-ism. Or we can, in a second, find a baker's dozen of perfectly legitimate reasons for feeling somewhat sorry for ourselves.</p>
 <p>Hanging over us long after detoxification is the comfortably familiar feeling of suffering. Self-pity is an enticing swamp. Sinking into it takes so much less effort than hope, or faith, or just plain moving.</p>

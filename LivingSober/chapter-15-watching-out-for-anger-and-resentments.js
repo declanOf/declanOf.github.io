@@ -1,6 +1,6 @@
 const chapter15 = {
 	"reference": "watching-out-for-anger-and-resentments",
-	"title": "15. Watching Out for Anger and Resentments",                                                                 
+	"title": "Watching Out for Anger and Resentments",                                                                 
 	"body": `<h1>15 Watching Out for Anger and Resentments</h1>
 <p>Anger has already been touched on in this booklet, but some rough experiences have convinced us it is so important it deserves special attention from anyone wanting to get over a drinking problem.</p>
 <p>Hostility, resentment, anger—whatever word you use to describe this feeling—seems to have a close tie-up with intoxication and maybe even a deeper one with alcoholism.</p>

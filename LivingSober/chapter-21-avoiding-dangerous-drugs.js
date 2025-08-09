@@ -1,6 +1,6 @@
 const chapter21 = {
 	"reference": "avoiding-dangerous-drugs",
-	"title": "21. Avoiding Dangerous Drugs and Medications ",                                                                 
+	"title": "Avoiding Dangerous Drugs and Medications ",                                                                 
 	"body": `<h1>21 Avoiding Dangerous Drugs and Medications </h1>
 <p>Mankind's use of various chemicals to change moods and alter feelings is ancient and widespread. Ethyl alcohol was probably the first of such chemicals, and may have always been the most widely popular drug for this use.</p>
 <p>Some drugs have legitimate value and are beneficial when administered by knowledgeable physicians if used solely as directed, and discontinued when they are no longer a medical necessity.</p>

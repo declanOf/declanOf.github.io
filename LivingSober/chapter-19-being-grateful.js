@@ -1,6 +1,6 @@
 const chapter19 = {
 	"reference": "being-grateful",
-	"title": "19. Being Grateful",                                                                 
+	"title": "Being Grateful",                                                                 
 	"body": `<h1>19 Being Grateful</h1>
 <p>One AA member recalls that, even during the worst of her drinking career, she never lost her faith. "I had a firm, unshakable belief—in disaster," she explains. "Every morning, almost my first conscious thought was 'Oh, my God, I wonder what new troubles are going to hit me today!'"</p>
 <p>When someone knocked at the door, she was sure it was for an unpleasant reason. She confidently expected only bills and other bad news in the mail. And if the telephone rang, she sighed in anticipation of dreary tidings.</p>

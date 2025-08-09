@@ -1,6 +1,6 @@
 const chapter20 = {
 	"reference": "remembering-your-last-drunk",
-	"title": "20. Remembering Your Last Drunk",                                                                 
+	"title": "Remembering Your Last Drunk",                                                                 
 	"body": `<h1>20 Remembering Your Last Drunk</h1>
 <p>That's not a typographical error. The word is "drunk," not "drink," as you'll see.</p>
 <p>"A drink" is a term which has awakened pleasurable echoes and anticipations in millions of people for centuries.</p>

@@ -1,6 +1,6 @@
 const chapter09 = {
 	"reference": "eating-or-drinking-something-usually-sweet",
-	"title": "9. Eating or Drinking Something - usually sweet",                                                                 
+	"title": "Eating or Drinking Something - usually sweet",                                                                 
 	"body": `<h1>9 Eating or Drinking Something - usually sweet</h1>
 <p>Can you imagine drinking a bourbon and soda right after a chocolate malted? Or a beer on top of a piece of cake with icing?</p>
 <p>If you're not too ill to read on, you will agree that they don't sound exactly made for each other.</p>

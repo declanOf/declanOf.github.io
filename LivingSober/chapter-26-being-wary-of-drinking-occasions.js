@@ -1,6 +1,6 @@
 const chapter26 = {
 	"reference": "being-wary-of-drinking-occasions",
-	"title": "26. Being Wary of Drinking Occasions ",
+	"title": "Being Wary of Drinking Occasions ",
 	"body": `<h1>26 Being Wary of Drinking Occasions </h1>
 <p>We have worked out many ways of handling occasions when other people are drinking, so that we may enjoy these occasions without drinking.</p>
 <p>Back on page 21, we talked about whether to keep liquor or other alcoholic beverages in the house when we decide to stop drinking. In that discussion, we acknowledged that we live in a society where most people drink, and we cannot realistically expect that fact to change. Throughout the rest of our lives, there will be drinking occasions. Chances are, every day we will see people drinking, see drinking places, see and hear dozens of advertisements urging us to drink.</p>

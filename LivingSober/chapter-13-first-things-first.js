@@ -1,6 +1,6 @@
 const chapter13 = {
 	"reference": "first-things-first",
-	"title": "13. First Things First",                                                                 
+	"title": "First Things First",                                                                 
 	"body": `<h1>13 First Things First</h1>
 <p>Here's an old saying that has special, strong meaning for us. Simply stated, it is this: Above all other concerns, we must remember that we cannot drink. Not drinking is the first order of business for us, anywhere, any time, under any circumstances.</p>
 <p>This is strictly a matter of survival for us. We have learned that alcoholism is a killer disease, leading to death in a large number of ways. We prefer not to activate that disease by risking a drink.</p>

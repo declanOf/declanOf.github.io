@@ -1,6 +1,6 @@
 const chapter08 = {
 	"reference": "changing-old-routines",
-	"title": "8. Changing Old Routines",                                                                 
+	"title": "Changing Old Routines",                                                                 
 	"body": `<h1>8 Changing Old Routines</h1>
 <p>Certain set times, familiar places, and regular activities associated with drinking have been woven closely into the fabric of our lives. Like fatigue, hunger, loneliness, anger, and over elation, these old routines can prove to be traps dangerous to our sobriety.</p>
 <p>When we first stopped drinking, many of us found it useful to look back at the habits surrounding our drinking and, whenever possible, to change a lot of the small things connected with drinking.</p>

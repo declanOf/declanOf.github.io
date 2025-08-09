@@ -1,6 +1,6 @@
 const chapter28 = {
 	"reference": "reading-the-aa-message",
-	"title": "28. Reading the AA Message",
+	"title": "Reading the AA Message",
 	"body": `<h1>28 Reading the AA Message</h1>
 <p>Human beings, we are told, learn many things best by seeing and touching as well as hearing them; and reading about them reinforces the strength of such learning even further.</p>
 <p>There are many good publications on alcoholism, and some not so good. Many of us have also profited by reading in other fields. But AA. neither endorses nor opposes anybody else's publications. We simply offer our own.</p>

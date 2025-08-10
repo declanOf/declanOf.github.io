@@ -138,7 +138,7 @@
 					fontStyles += `div#chapter-content.font-minus-${idx.toString()}-percent { font-size: ${fontSize}em; }\n`;
 				}
 
-				for (let idx = 1; idx <= 100; idx++) {
+				for (let idx = 1; idx <= 300; idx++) {
 					const fontSize = Math.round((1.25 + (1.25 * (idx / 100))) * 1000) / 1000;
 
 					fontStyles += `div#chapter-content.font-plus-${idx.toString()}-percent { font-size: ${fontSize}em; }\n`;
@@ -408,7 +408,7 @@
 			<p>Copyright © 2024 Alcoholics Anonymous World Services, Inc.</p>
 			<p style="text-align: center;"><img src="./qr-code.png" style="height: 200px"/></p>
 			<p><hr></p>
-			<p id="slider-container"><input type="range" min="-50" max="100" class="slider" id="fontSizeSlider"></p>
+			<p id="slider-container"><input type="range" min="-50" max="300" class="slider" id="fontSizeSlider"></p>
 		</div>
 		<footer id="fade-footer">
 		</footer>

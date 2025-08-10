@@ -85,6 +85,7 @@
 
 						chapters.forEach((chapter, idx) => {
 							const chapterNumber = (idx < 2 || idx === chapters.length - 1) ? "&nbsp;" : (idx - 1).toString();
+
 							newContent += `<dt>${chapterNumber}</dt><dd><a class="show-chapter" attrId="${idx}">${chapter.title}</a></dd>`;
 						});
 
@@ -112,22 +113,41 @@
 						);
 
 						setPreferencesOnLoad();
+						createFontStyles();
 					} catch (error) {
 						alert(error);
 					}
 				}
 			);
 
-			const changeFontSize = (fontSize) => {
-				let newFontClass = "";
+			const createFontStyles = () => {
+				let fontStyles = "";
 
-				if (fontSize < 0) {
-					newFontClass = "font-minus-" + (Math.abs(fontSize) * 10) + "-percent";
-				} else if (fontSize > 0) {
-					newFontClass = "font-plus-" + (fontSize * 10) + "-percent";
+				for (let idx = 1; idx < 51; idx++) {
+					const fontSize = Math.round((1.25 - (1.25 * (idx / 100))) * 1000) / 1000;
+
+					fontStyles += `div#chapter-content.font-minus-${idx.toString()}-percent { font-size: ${fontSize}em; }\n`;
 				}
 
-				console.log(newFontClass);
+				for (let idx = 1; idx <= 100; idx++) {
+					const fontSize = Math.round((1.25 + (1.25 * (idx / 100))) * 1000) / 1000;
+
+					fontStyles += `div#chapter-content.font-plus-${idx.toString()}-percent { font-size: ${fontSize}em; }\n`;
+				}
+
+				const style = document.createElement("style");
+
+				style.textContent = fontStyles;
+
+				document.head.append(style);
+			};
+
+			const changeFontSize = (fontSize) => {
+				if (fontSize === 0) {
+					return;
+				}
+
+				const newFontClass = `font-${fontSize < 0 ? "minus" : "plus"}-${Math.abs(fontSize)}-percent`;
 
 				$("div#chapter-content").attr("class", newFontClass);
 
@@ -200,9 +220,8 @@
 				padding-bottom:8em;
 			}
 
-
 			dl.toc dt, dl.toc dd {
-				line-height: 1em;
+				line-height: 1.1em;
 				padding-top: .25em;
 				padding-bottom: .25em;
 				padding-left: 0;
@@ -269,86 +288,6 @@
 				font-size: 1.25em;
 				text-align: justify;
 				overflow-x: scroll;
-			}
-
-			div#chapter-content.font-minus-100-percent {
-				font-size: calc(1.25em * 0.01);
-			}
-
-			div#chapter-content.font-minus-90-percent {
-				font-size: calc(1.25em * 0.10);
-			}
-
-			div#chapter-content.font-minus-80-percent {
-				font-size: calc(1.25em * 0.20);
-			}
-
-			div#chapter-content.font-minus-70-percent {
-				font-size: calc(1.25em * 0.30);
-			}
-
-			div#chapter-content.font-minus-60-percent {
-				font-size: calc(1.25em * 0.40);
-			}
-
-			div#chapter-content.font-minus-50-percent {
-				font-size: calc(1.25em * 0.50);
-			}
-
-			div#chapter-content.font-minus-40-percent {
-				font-size: calc(1.25em * 0.60);
-			}
-
-			div#chapter-content.font-minus-30-percent {
-				font-size: calc(1.25em * 0.70);
-			}
-
-			div#chapter-content.font-minus-20-percent {
-				font-size: calc(1.25em * 0.80);
-			}
-
-			div#chapter-content.font-minus-10-percent {
-				font-size: calc(1.25em * 0.9);
-			}
-
-			div#chapter-content.font-plus-10-percent {
-				font-size: calc(1.25em * 1.10);
-			}
-
-			div#chapter-content.font-plus-20-percent {
-				font-size: calc(1.25em * 1.20);
-			}
-
-			div#chapter-content.font-plus-30-percent {
-				font-size: calc(1.25em * 1.30);
-			}
-
-			div#chapter-content.font-plus-40-percent {
-				font-size: calc(1.25em * 1.40);
-			}
-
-			div#chapter-content.font-plus-50-percent {
-				font-size: calc(1.25em * 1.50);
-			}
-
-			div#chapter-content.font-plus-60-percent {
-				font-size: calc(1.25em * 1.60);
-			}
-
-			div#chapter-content.font-plus-70-percent {
-				font-size: calc(1.25em * 1.70);
-			}
-
-			div#chapter-content.font-plus-80-percent {
-				font-size: calc(1.25em * 1.80);
-			}
-
-			div#chapter-content.font-plus-90-percent {
-				font-size: calc(1.25em * 1.90);
-			}
-
-			div#chapter-content.font-plus-100-percent {
-				font-size: calc(1.25em * 2.00);
 			}
 
 			div#chapter-content ul {
@@ -460,7 +399,7 @@
 			<p>Copyright © 2024 Alcoholics Anonymous World Services, Inc.</p>
 			<p style="text-align: center;"><img src="./qr-code.png" style="height: 200px"/></p>
 			<p><hr></p>
-			<p id="slider-container"><input type="range" min="-5" max="10" class="slider" id="fontSizeSlider"></p>
+			<p id="slider-container"><input type="range" min="-50" max="100" class="slider" id="fontSizeSlider"></p>
 		</div>
 		<footer id="fade-footer">
 		</footer>

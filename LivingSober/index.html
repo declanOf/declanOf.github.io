@@ -33,7 +33,7 @@
 		<script type="text/javascript" src="./chapter-29-going-to-aa-meetings.js"></script>
 		<script type="text/javascript" src="./chapter-30-trying-the-12-steps.js"></script>
 		<script type="text/javascript" src="./chapter-31-finding-your-own-way.js"></script>
-		<script type="text/javascript" src="./chapter-32-the-twelve-steps.js"></script>
+		<script type="text/javascript" src="./the-twelve-steps.js"></script>
 		<script type="text/javascript" src="./appendix.js"></script>
 
 	    <script
@@ -68,17 +68,17 @@
 								title: "Information",
 								modal: true,
 								width: "80%",
-								height: "auto",
-								buttons: {
-									"Close": function() {
-										$(this).dialog("close");
-									}
-								}
+								height: "auto"
 							});
 						});
 
+						$("body").on("click", (event) => {
+							if ($(event.target).is("div#information-dialog") || $(event.target).is(".ui-widget-overlay") || $(event.target).is("div#information-dialog p")) {
+								$("div#information-dialog").dialog("close");
+							}
+						});
 						chapters = [
-							forwardAboutThatTitle, prefixWhyNotDrinking, chapter01, chapter02, chapter03, chapter04, chapter05, chapter06, chapter07, chapter08, chapter09, chapter10, chapter11, chapter12, chapter13, chapter14, chapter15, chapter16, chapter17, chapter18, chapter19, chapter20, chapter21, chapter22, chapter23, chapter24, chapter25, chapter26, chapter27, chapter28, chapter29, chapter30, chapter31, chapter32, appendix
+							forwardAboutThatTitle, prefixWhyNotDrinking, chapter01, chapter02, chapter03, chapter04, chapter05, chapter06, chapter07, chapter08, chapter09, chapter10, chapter11, chapter12, chapter13, chapter14, chapter15, chapter16, chapter17, chapter18, chapter19, chapter20, chapter21, chapter22, chapter23, chapter24, chapter25, chapter26, chapter27, chapter28, chapter29, chapter30, chapter31, theTwelveSteps, appendix
 						]
 
 						let newContent = "";
@@ -147,7 +147,7 @@
 
 				const title = (titleOverwrite !== null) ? titleOverwrite : chapters[chapterId].title;
 
-				$("#accordion h3").html("🔽 " + title);
+				$("#accordion h3").html("≡ " + title);
 
 				$("#accordion").accordion("option", "active", false);
 
@@ -359,7 +359,7 @@
 
 			button#information {
 				position: fixed;
-				bottom: 1em;
+				bottom: .5em;
 				right: .5em;
 				font-size: 3em;
 				z-index: 100;
@@ -368,17 +368,21 @@
 				z-index: 1000;
 			}
 
-			div#font-buttons {
-				position: fixed;
-				bottom: 4em;
-				z-index: 99;
-				text-align: center;
-				width: 100%;
-			}
-
 			div#information-dialog {
 				display: none;
 				font-size: .8em;
+			}
+
+			div#information-dialog p {
+				padding-left: 10%;
+				padding-right: 10%;
+				text-align: justify;
+			}
+
+			div#information-dialog p#slider-container {
+				text-align: center;
+				padding-right: 0;
+				padding-left: 0;
 			}
 
 			footer#fade-footer {
@@ -407,7 +411,7 @@
 
 			input#fontSizeSlider {
 				-webkit-appearance: none;
-				width: 80%;
+				width: 100%;
 				height: 2em;
 				border-radius: 5px;
 				background: #d3d3d3;
@@ -451,15 +455,14 @@
 			<div id="chapter-content" class=""></div>
 		</div>
 		<button id="information">ℹ️</button>
-		<div id="font-buttons">
-			 <input type="range" min="-5" max="10" class="slider" id="fontSizeSlider">
-		</div>
 		<div id="information-dialog">
-			<p>This is a digital version of the 'Living Sober' booklet, which provides practical advice for those in recovery from alcoholism. Use the navigation buttons to explore the chapters.</p>
-			<p>These articles are reprinted pursuant to section 107 of the Copyright Act 1976.</p>
-			<p>Digital and printed copies of Living Sober can be purchased from the Alcoholics Anonymous website: <a target="_blank" href="https://www.aa.org/living-sober-book">AA's Living Sober page</a></p>
+			<p>This digital version of the 'Living Sober' booklet contains practical advice for those in recovery from alcoholism. Use the navigation buttons to explore the chapters.</p>
+			<p>This content is shared pursuant to section 107 of the Copyright Act 1976. Digital and printed copies of Living Sober can be purchased from the Alcoholics Anonymous website:</p>
+			<p style="text-align: center;"><a target="_blank" href="https://www.aa.org/living-sober-book">Living Sober</a></p>
 			<p>Copyright © 2024 Alcoholics Anonymous World Services, Inc.</p>
-			<p style="text-align: center;"><img src="./qr-code.png" /></p>
+			<p style="text-align: center;"><img src="./qr-code.png" style="height: 200px"/></p>
+			<p><hr></p>
+			<p id="slider-container"><input type="range" min="-5" max="10" class="slider" id="fontSizeSlider"></p>
 		</div>
 		<footer id="fade-footer">
 		</footer>

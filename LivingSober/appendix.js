@@ -19,7 +19,6 @@ const appendix = {
 <p>Experience suggests that while some prescribed medications may be safe for most nonalcoholics when taken according to a doctor’s instructions, it is possible that they may affect the alcoholic in a different way. It is often true that these substances create dependence as devastating as dependence on alcohol. It is well known that many sedatives have an action in the body similar to the action of alcohol. When these drugs are used without medical supervision, dependence can readily develop.</p>
 <p>Many A.A.s who have taken over-the-counter, nonprescription drugs have discovered the alcoholic’s tendency to misuse. Those A.A.s who have used street drugs, ranging from marijuana to heroin, have discovered the alcoholic’s tendency to become dependent on other drugs. The list goes on and will lengthen as new drugs are developed.</p>
 <p>Always consult your doctor if you think medication may be helpful or needed.</p>
-
 <h2 style="text-align: right">Note to medical professionals</h2>
 <p>Cooperation with the professional community has been an objective of Alcoholics Anonymous since its beginnings. Professionals who work with alcoholics share a common purpose with Alcoholics Anonymous: to help the alcoholic stop drinking and lead a healthy, productive life.</p>
 <p>As noted in the introduction, some A.A. members must take prescribed medications. However, our experience indicates that the misuse of prescription medication can threaten the achievement and maintenance of sobriety. The suggestions provided in our introduction are offered to help A.A. members find the right balance and minimize the risk of relapse.</p>
@@ -27,7 +26,6 @@ const appendix = {
 <p>Because of the difficulties that many alcoholics have with drugs, some members have taken the position that no one in A.A. should take any medication. While this position has undoubtedly prevented relapses for some, it has meant disaster for others.</p>
 <p>A.A. members and many of their physicians have described situations in which depressed patients have been told by A.A.s to throw away the pills, only to have depression return with all its difficulties, sometimes resulting in suicide. We have heard, too, from members with other conditions, including schizophrenia, bipolar disorder, epilepsy and others requiring medication, that well-meaning A.A. friends discourage them from taking any prescribed medication. Unfortunately, by following a layperson’s advice, the sufferers find that their conditions can return with all their previous intensity. On top of that, they feel guilty because they are convinced that “A.A. is against pills.”</p>
 <p>It becomes clear that just as it is wrong to enable or support any alcoholic to become re-addicted to any drug, it’s equally wrong to deprive any alcoholic of medication that can alleviate or control other disabling physical and/or emotional problems.</p>
-
 <footnote>
     <hr>
     <br>* From the Conference-approved pamphlet “The A.A. Member—Medications and Other Drugs.”

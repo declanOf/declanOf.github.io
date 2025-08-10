@@ -102,26 +102,23 @@
 
 						$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
 
-						changeChapter(0, "Living Sober");
-
 						$("input#fontSizeSlider").on(
 							"input",
 							(event) => {
 								const fontSize = parseInt($(event.target).val());
 
-								changeFontSize(event, { value: fontSize });
+								changeFontSize(fontSize);
 							}
 						);
-						$(".ui-slider-handle").html("100%");
+
+						setPreferencesOnLoad();
 					} catch (error) {
 						alert(error);
 					}
 				}
 			);
 
-			const changeFontSize = (event, ui) => {
-				const fontSize = ui.value;
-
+			const changeFontSize = (fontSize) => {
 				let newFontClass = "";
 
 				if (fontSize < 0) {
@@ -130,8 +127,11 @@
 					newFontClass = "font-plus-" + (fontSize * 10) + "-percent";
 				}
 
+				console.log(newFontClass);
+
 				$("div#chapter-content").attr("class", newFontClass);
-				$(".ui-slider-handle").html((100 + fontSize * 10).toString() + "%");
+
+				localStorage.setItem("fontClass", newFontClass);
 			};
 
 			const changeChapter = (chapterId, titleOverwrite = null) => {
@@ -154,8 +154,25 @@
 				$("button#prev").css("opacity", (chapterId === 0) ? "0.2" : "1.0");
 
 				$("button#next").css("opacity", (chapterId === chapters.length - 1) ? "0.2" : "1.0");
+
+				localStorage.setItem("currentChapterId", chapterId);
 			};
 
+			const setPreferencesOnLoad = () => {
+				const storedChapterId = localStorage.getItem("currentChapterId");
+
+				const storedFontClass = localStorage.getItem("fontClass");
+
+				if (storedChapterId !== null) {
+					changeChapter(parseInt(storedChapterId), "Living Sober");
+				} else {
+					changeChapter(0, "Living Sober");
+				}
+
+				if (storedFontClass !== null) {
+					$("div#chapter-content").addClass(storedFontClass);
+				}
+			};
 		</script>
 		<style type="text/css">
 			#accordion-container {
@@ -426,8 +443,8 @@
 			</div>
 		</div>
 		<div id="navigation">
-			<button id="prev">◀️ Prev</button>
-			<button id="next">Next ▶️</button>
+			<button id="prev">◀️&nbsp;&nbsp;Prev</button>
+			<button id="next">Next&nbsp;&nbsp;▶️</button>
 		</div>
 		<div id="content-container">
 			<div id="chapter-content" class=""></div>

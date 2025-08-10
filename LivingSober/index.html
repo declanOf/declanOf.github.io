@@ -102,16 +102,16 @@
 
 						$("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
 
-						$("div#font-size").slider(
-							{
-								value: 0,
-								min: -5,
-								max: 10,
-								step: 1,
-								slide: changeFontSize
+						changeChapter(0, "Living Sober");
+
+						$("input#fontSizeSlider").on(
+							"input",
+							(event) => {
+								const fontSize = parseInt($(event.target).val());
+
+								changeFontSize(event, { value: fontSize });
 							}
 						);
-						changeChapter(0, "Living Sober");
 						$(".ui-slider-handle").html("100%");
 					} catch (error) {
 						alert(error);
@@ -342,7 +342,7 @@
 
 			button#information {
 				position: fixed;
-				bottom: .5em;
+				bottom: 1em;
 				right: .5em;
 				font-size: 3em;
 				z-index: 100;
@@ -357,21 +357,6 @@
 				z-index: 99;
 				text-align: center;
 				width: 100%;
-			}
-
-			div#font-size {
-				left: 20%;
-				width: 60%;
-				height: 3em;
-			}
-
-			div#font-size span.ui-slider-handle {
-				height: 2.5em;
-				width: 6em;
-				margin-left: -4em;
-				text-align: center;
-				line-height: 2.5em;
-				font-size: 1.5em;
 			}
 
 			div#information-dialog {
@@ -401,6 +386,35 @@
 			span.ui-button-icon, button.ui-button {
 				zoom: 1.5;
 			}
+
+			input#fontSizeSlider {
+				-webkit-appearance: none;
+				width: 80%;
+				height: 2em;
+				border-radius: 5px;
+				background: #d3d3d3;
+				outline: none;
+				opacity: 0.9;
+				-webkit-transition: .2s;
+				transition: opacity .2s;
+			}
+
+			input#fontSizeSlider::-webkit-slider-thumb {
+				-webkit-appearance: none;
+				width: 5em;
+				height: 3em;
+				border-radius: none;
+				background: #2244CC;
+				cursor: pointer;
+			}
+
+			.slider::-moz-range-thumb {
+				width: 5em;
+				height: 4em;
+				border-radius: none;
+				background: #2244CC;
+				cursor: pointer;
+			}
 		</style>
 	</head>
 
@@ -420,7 +434,7 @@
 		</div>
 		<button id="information">ℹ️</button>
 		<div id="font-buttons">
-			<div id="font-size"></div>
+			 <input type="range" min="-5" max="10" value="0" class="slider" id="fontSizeSlider">
 		</div>
 		<div id="information-dialog">
 			<p>

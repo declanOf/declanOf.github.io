@@ -1,4 +1,4 @@
-const forwardAboutThatTitle = {
+export const forwardAboutThatTitle = {
     "reference": "about-that-title",
     "title": "About That Title",
 	"body": `<h1>About That Title</h1>

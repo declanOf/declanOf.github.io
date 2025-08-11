@@ -1,4 +1,4 @@
-const chapter10 = {
+export const chapter10 = {
 	"reference": "making-use-of-telephone-therapy",
 	"title": "Making Use of Telephone Therapy",                                                                 
 	"body": `<h1>10 Making Use of Telephone Therapy</h1>

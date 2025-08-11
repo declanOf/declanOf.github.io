@@ -1,4 +1,4 @@
-const chapter17 = {
+export const chapter17 = {
 	"reference": "looking-out-for-over-elation",
 	"title": "Looking Out for Over-elation",                                                                 
 	"body": `<h1>17 Looking Out for Over-elation</h1>

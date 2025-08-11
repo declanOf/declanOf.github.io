@@ -1,4 +1,4 @@
-const chapter25 = {
+export const chapter25 = {
 	"reference": "getting-out-of-the-if-trap",
 	"title": "Getting Out of the If Trap",
 	"body": `<h1>25 Getting Out of the If Trap</h1>

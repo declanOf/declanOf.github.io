@@ -1,4 +1,4 @@
-const prefixWhyNotDrinking = {
+export const prefixWhyNotDrinking = {
   "reference": "why-not-drinking",
   "title": "Why 'Not Drinking'?",
   "body": `<h1>Why 'Not Drinking'?</h1>

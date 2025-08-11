@@ -1,4 +1,4 @@
-const chapter26 = {
+export const chapter26 = {
 	"reference": "being-wary-of-drinking-occasions",
 	"title": "Being Wary of Drinking Occasions ",
 	"body": `<h1>26 Being Wary of Drinking Occasions </h1>

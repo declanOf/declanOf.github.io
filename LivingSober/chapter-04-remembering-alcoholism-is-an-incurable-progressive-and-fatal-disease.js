@@ -1,4 +1,4 @@
-const chapter04 = {
+export const chapter04 = {
     "reference": "remembering-alcoholism-is-an-incurable-progressive-and-fatal-disease",
     "title": "Remembering that alcoholism is an incurable, progressive, fatal disease",
 	"body": `<h1>4 Remembering that alcoholism is an incurable, progressive, fatal disease</h1>

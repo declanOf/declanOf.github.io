@@ -1,4 +1,4 @@
-const appendix = {
+export const appendix = {
     "reference": "appendix",
     "title": "Appendix",
     "body": `<h1>Appendix *</h1>

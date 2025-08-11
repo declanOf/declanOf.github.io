@@ -1,4 +1,4 @@
-const chapter24 = {
+export const chapter24 = {
 	"reference": "staying-clear-of-emotional-entanglements",
 	"title": "Steering Clear of Emotional Entanglements",
 	"body": `<h1>24 Steering Clear of Emotional Entanglements</h1>

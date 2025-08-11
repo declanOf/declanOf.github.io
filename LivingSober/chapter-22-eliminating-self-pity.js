@@ -1,4 +1,4 @@
-const chapter22 = {
+export const chapter22 = {
 	"reference": "eliminating-self-pity",
 	"title": "Eliminating Self Pity",
 	"body": `<h1>22 Eliminating Self Pity</h1>

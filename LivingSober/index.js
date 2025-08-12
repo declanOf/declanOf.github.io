@@ -1,5 +1,9 @@
 let currentChapterId = 0;
 
+let fontStyleSizes = [];
+
+let fontStyleSizeIndex = null;
+
 import { chapters } from "./chapters.js";
 
 $(document).ready(
@@ -63,16 +67,24 @@ $(document).ready(
 const createFontStyles = () => {
     let fontStyles = "";
 
-    for (let idx = 1; idx < 51; idx++) {
+    for (let idx = 0; idx <= 50; idx++) {
         const fontSize = Math.round((1.25 - (1.25 * (idx / 100))) * 1000) / 1000;
 
         fontStyles += `div#chapter-content.font-minus-${idx.toString()}-percent { font-size: ${fontSize}em; }\n`;
+
+        fontStyleSizes.push(`font-minus-${idx.toString()}-percent`);
     }
 
-    for (let idx = 1; idx <= 300; idx++) {
+    fontStyleSizeIndex = fontStyleSizes.length;
+
+    fontStyleSizes.push();
+
+    for (let idx = 1; idx <= 50; idx++) {
         const fontSize = Math.round((1.25 + (1.25 * (idx / 100))) * 1000) / 1000;
 
         fontStyles += `div#chapter-content.font-plus-${idx.toString()}-percent { font-size: ${fontSize}em; }\n`;
+
+        fontStyleSizes.push(`font-plus-${idx.toString()}-percent`);
     }
 
     const style = document.createElement("style");
@@ -89,10 +101,18 @@ const changeFontSize = (fontSize) => {
 
     const newFontClass = `font-${fontSize < 0 ? "minus" : "plus"}-${Math.abs(fontSize)}-percent`;
 
-    $("div#chapter-content").attr("class", newFontClass);
-
-    localStorage.setItem("fontClass", newFontClass);
+    setFontSizeClass(newFontClass);
 };
+
+const setFontSizeClass = (fontClass) => {
+    if (fontStyleSizes.includes(fontClass)) {
+        $("div#chapter-content").attr("class", fontClass);
+
+        localStorage.setItem("fontClass", newFontClass);
+    } else {
+        console.warn(`Font class "${fontClass}" not found in available font styles.`);
+    }
+}
 
 const changeChapter = (chapterId, titleOverwrite = null) => {
     if (chapterId < 0 || chapterId >= chapters.length) {
@@ -101,7 +121,7 @@ const changeChapter = (chapterId, titleOverwrite = null) => {
 
     currentChapterId = chapterId;
 
-    $("div#chapter-content").html(chapters[chapterId].body + "<br><br><br><br><br>");
+    $("div#chapter-content").html(chapters[chapterId].body + "<br><br><br><br><br><br>");
 
     $("div#content-container").animate({ scrollTop: 0 }, "slow");
 

@@ -1,21 +1,27 @@
 #accordion-container {
     position: fixed;
+    top: 0pt;
     z-index: 100;
-    width: 100%;
+    right: 1pt;
+    left:1pt
 }
 
 #accordion h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 4em;
+    font-size: 1.5em;
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 0.25em;
 }
 
 #accordion dl.toc {
     overflow-y: scroll;
     position: fixed;
     z-index: 100;
-    top: 8.5em;
+    top: 3em;
     width: 100%;
     margin-left: -2em;
     z-index: 50;
@@ -30,7 +36,7 @@ dl.toc dt, dl.toc dd {
     padding-bottom: .25em;
     padding-left: 0;
     padding-right: 0;
-    font-size: 3em;
+    font-size: 1em;
     clear: none;
     float: left;
 }
@@ -53,7 +59,7 @@ dl.toc dd {
 div#navigation {
     position: fixed;
     height: 3.5em;
-    top: 9.5em;
+    top: 3em;
     width: 100%;
     z-index: 50;
 }
@@ -63,10 +69,10 @@ button#prev, button#next {
     padding-left: 2em;
     padding-right: 2em;
     top: .25em;
-    height: 2.5em;
+    height: 2em;
     max-width: 49%;
     width:10em;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
 button#prev {
@@ -79,7 +85,7 @@ button#next {
 
 div#content-container {
     position: fixed;
-    top: 15em;
+    top: 7em;
     overflow-y: scroll;
     left: 1em;
     right: 1em;
@@ -100,9 +106,9 @@ div#chapter-content ul {
 
 button#information {
     position: fixed;
-    bottom: .5em;
-    right: .5em;
-    font-size: 3em;
+    bottom: .25em;
+    right: .25em;
+    font-size: 2em;
     z-index: 100;
     background-color: transparent;
     border: none;
@@ -115,8 +121,6 @@ div#information-dialog {
 }
 
 div#information-dialog p {
-    padding-left: 10%;
-    padding-right: 10%;
     text-align: justify;
 }
 
@@ -139,15 +143,11 @@ footer#fade-footer {
 }
 
 div.ui-dialog-titlebar {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 div.ui-dialog-content {
     font-size: 1.5em;
-}
-
-span.ui-button-icon, button.ui-button {
-    zoom: 1.5;
 }
 
 input#fontSizeSlider {

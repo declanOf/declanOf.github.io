@@ -86,6 +86,6 @@ TOO YOUNG? (A cartoon pamphlet for teenagers)<br>
 IT SURE BEATS SITTING IN A CELL<br>
 <em>(An Illustrated pamphlet for inmates)</em><br>
 </p>
-Complete order forms from A.A. General Service Office:<br>
-Box 459, Grand Central Station, New York, NY 10163`
+<p>Complete order forms from A.A. General Service Office:<br>
+Box 459, Grand Central Station, New York, NY 10163</p>`
 };

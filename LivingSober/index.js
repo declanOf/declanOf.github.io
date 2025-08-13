@@ -94,18 +94,18 @@ const changeFontSize = (fontSize) => {
         return;
     }
 
-    const newFontClass = `font-${fontSize < 0 ? "minus" : "plus"}-${Math.abs(fontSize)}-percent`;
+    const newFontSizeClass = `font-${fontSize < 0 ? "minus" : "plus"}-${Math.abs(fontSize)}-percent`;
 
-    setFontSizeClass(newFontClass);
+    setFontSizeClass(newFontSizeClass);
 };
 
-const setFontSizeClass = (fontClass) => {
-    if (fontStyleSizes.includes(fontClass)) {
-        $("div#chapter-content").attr("class", fontClass);
+const setFontSizeClass = (fontSizeClass) => {
+    if (fontStyleSizes.includes(fontSizeClass)) {
+        $("div#chapter-content").attr("class", fontSizeClass);
 
-        localStorage.setItem("fontClass", fontClass);
+        localStorage.setItem("fontClass", fontSizeClass);
     } else {
-        console.warn(`Font class "${fontClass}" not found in available font styles.`);
+        console.warn(`Font class "${fontSizeClass}" not found in available font styles.`);
     }
 }
 

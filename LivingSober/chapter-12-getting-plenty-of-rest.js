@@ -1,7 +1,7 @@
 export const chapter12 = {
 	"reference": "getting-plenty-of-rest",
 	"title": "Getting Plenty of Rest",                                                                 
-	"body": `<h1>12 Getting Plenty of Rest</h1>
+	"body": `<h4>12 Getting Plenty of Rest</h4>
 <p>For at least three reasons, people who drink heavily often cannot realize how tired they are. The reasons are three characteristics of alcohol: (1) It is full of calories, which give instant energy; (2) it numbs the central nervous system, so that one cannot fully feel body discomfort; (3) after its anesthetic effect wears off, it produces agitation that <em>
 feels</em>
 &nbsp;like nervous energy.</p>

@@ -1,7 +1,7 @@
 export const chapter15 = {
 	"reference": "watching-out-for-anger-and-resentments",
 	"title": "Watching Out for Anger and Resentments",                                                                 
-	"body": `<h1>15 Watching Out for Anger and Resentments</h1>
+	"body": `<h4>15 Watching Out for Anger and Resentments</h4>
 <p>Anger has already been touched on in this booklet, but some rough experiences have convinced us it is so important it deserves special attention from anyone wanting to get over a drinking problem.</p>
 <p>Hostility, resentment, anger—whatever word you use to describe this feeling—seems to have a close tie-up with intoxication and maybe even a deeper one with alcoholism.</p>
 <p>For instance, some scientists once asked a large number of alcoholic men why they got drunk, and found an important answer was "So I can tell somebody off." In other words, they felt the power and freedom while drunk to express anger they could not comfortably display when sober.</p>

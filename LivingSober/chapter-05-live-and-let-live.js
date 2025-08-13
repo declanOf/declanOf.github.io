@@ -1,7 +1,7 @@
 export const chapter05 = {
 	"reference": "live-and-let-live",
 	"title": "Live and Let Live",                                                                 
-	"body": `<h1>5 Live and Let Live</h1>
+	"body": `<h4>5 Live and Let Live</h4>
 <p>The old saying “Live and Let Live” seems so commonplace, it is easy to overlook its value. Of course, one reason it has been said over and over for years is that it has proved beneficial in so many ways.&nbsp;</p>
 <p>We A.A.’s make some special uses of it to help us not drink. It particularly helps us cope with people who get on our nerves. </p>
 <p>Reviewing once more a little of our drinking histories, many of us can see how very, very often our drinking problem appeared to be related somehow to other people. Experimenting with beer or wine in our teen-age years seemed natural, since so many others were doing it, and we wanted their approval. Then came weddings and bar mitzvahs and christenings and holidays and football games and cocktail parties and business lunches...and the list can go on and on. In all of these circumstances, we drank at least partly because everybody else was drinking and seemed to expect us to.</p>

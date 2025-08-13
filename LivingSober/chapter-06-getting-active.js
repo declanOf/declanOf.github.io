@@ -1,7 +1,7 @@
 export const chapter06 = {
 	"reference": "getting-active",
 	"title": "Getting Active",                                                                 
-	"body": `<h1>6 Getting Active</h1>
+	"body": `<h4>6 Getting Active</h4>
 <p>It is very hard just to sit still trying not to do a certain thing, or not even to think about it.&nbsp; It's much easier to get active and do something else—other than the act we're trying to avoid.</p>
 <p>So it is with drinking. Simply trying to avoid a drink (or not think of one), all by itself, doesn't seem to be enough. The more we think about the drink we're trying to keep away from, the more it occupies our mind, of course. And that's no good. It's better to get busy with something, almost anything, that will use our mind and channel our energy toward health.</p>
 <p>Thousands of us wondered what we would do, once we stopped drinking, with all that time on our hands. Sure enough, when we did stop, all those hours we had once spent planning, getting our drinks, drinking, and recovering from its immediate effects, suddenly turned into big, empty holes of time that had to be filled somehow.</p>

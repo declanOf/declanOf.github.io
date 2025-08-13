@@ -86,7 +86,7 @@ button#next {
 
 div#content-container {
     position: fixed;
-    top: 7em;
+    top: 5.5em;
     overflow-y: scroll;
     left: 1em;
     right: 1em;
@@ -133,7 +133,7 @@ div#information-dialog p#slider-container {
 
 footer#fade-footer {
     position:fixed;
-    height: 5em;
+    height: 1em;
     left: 0;
     right: 0;
     bottom: 0;

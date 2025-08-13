@@ -1,7 +1,7 @@
 export const chapter32 = {
   title: "The Twelve Steps",
   reference: "the-twelve-steps",
-  body: `<h1>32 The Twelve Steps</h1>
+  body: `<h4>32 The Twelve Steps</h4>
 <p style="text-align: center">THE TWELVE STEPS OF ALCOHOLICS ANONYMOUS</center></p>
 <p>1. We admitted we were powerless over alcohol—that our lives had become unmanageable.</p>
 <p>2. Came to believe that a Power greater than ourselves could restore us to sanity.</p>

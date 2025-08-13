@@ -1,7 +1,7 @@
 export const appendix = {
     "reference": "appendix",
     "title": "Appendix",
-    "body": `<h1>Appendix *</h1>
+    "body": `<h4>Appendix *</h4>
 <h2>A report from a group of physicians in A.A.</h2>
 <p>Because this subject involves important medical decisions, a group of physicians who are members of A.A. and two physicians who are friends of A.A. were asked to review this pamphlet.*</p>
 <p>Some A.A. members must take prescribed medication for serious medical problems. However, it is generally accepted that the misuse of prescription medication and other drugs can threaten the achievement and maintenance of sobriety. It may be possible to minimize the threat of relapse if the following suggestions are heeded:</p>

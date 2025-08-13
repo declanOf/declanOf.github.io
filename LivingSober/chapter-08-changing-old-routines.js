@@ -1,7 +1,7 @@
 export const chapter08 = {
 	"reference": "changing-old-routines",
 	"title": "Changing Old Routines",                                                                 
-	"body": `<h1>8 Changing Old Routines</h1>
+	"body": `<h4>8 Changing Old Routines</h4>
 <p>Certain set times, familiar places, and regular activities associated with drinking have been woven closely into the fabric of our lives. Like fatigue, hunger, loneliness, anger, and over elation, these old routines can prove to be traps dangerous to our sobriety.</p>
 <p>When we first stopped drinking, many of us found it useful to look back at the habits surrounding our drinking and, whenever possible, to change a lot of the small things connected with drinking.</p>
 <p>To illustrate: Many who used to begin the day with an eye-opener in the bathroom now head for coffee in the kitchen. Some of us shifted the order of things we did to prepare for the day, such as eating before bathing and dressing, or vice versa. A change in brands of toothpaste and mouthwash (be careful about the alcohol content!) gave us a fresh, different taste to start out with. We tried a little exercise or a few quiet moments of contemplation or meditation before plunging into the day.</p>

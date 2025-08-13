@@ -1,7 +1,7 @@
 export const chapter23 = {
 	"reference": "seeking-professional-help",
 	"title": "Seeking Professional Help",
-	"body": `<h1>23 Seeking Professional Help</h1>
+	"body": `<h4>23 Seeking Professional Help</h4>
 <p>Probably every recovered alcoholic has needed and sought professional help of the sort AA does not provide. For instance, the first two AA members, its co-founders, needed and got help from physicians, hospitals, and clergymen.</p>
 <p>Once we have started staying sober, a lot of our problems seem to disappear. But certain matters remain, or arise, which do require expert professional attention, such as that of an obstetrician, a chiropodist, a lawyer, a chest expert, a dentist, a dermatologist, or a psychological counselor of some kind.</p>
 <p>Since AA does not furnish such services, we rely on the professional community for job-getting or vocational guidance, advice on domestic relations, counseling on psychiatric problems, and many other needs. AA does not give financial assistance, food, clothing, or shelter to problem drinkers. But there are good professional agencies and facilities particularly happy to help out an alcoholic who is sincerely trying to stay sober.</p>

@@ -1,7 +1,7 @@
 export const chapter11 = {
 	"reference": "availing-yourself-of-a-sponsor",
 	"title": "Availing Yourself of a Sponsor",                                                                 
-	"body": `<h1>11 Availing Yourself of a Sponsor</h1>
+	"body": `<h4>11 Availing Yourself of a Sponsor</h4>
 <p>Not every AA member has had a sponsor. But thousands of us say we would not be alive were it not for the special friendship of one recovered alcoholic in the first months and years of our sobriety.</p>
 <p>In the earliest days of AA, the term &#8220;sponsor&#8221; was not in the AA jargon. Then a few hospitals in Akron, Ohio, and New York began to accept alcoholics (under that diagnosis) as patients—if a sober AA member would agree to &#8220;sponsor&#8221; the sick man or woman. The sponsor took the patient to the hospital, visited him or her regularly, was present when the patient was discharged, and took the patient home and then to an AA meeting. At the meeting, the sponsor introduced the newcomer to other happily non-drinking alcoholics. All through the early months of recovery, the sponsor stood by, ready to answer questions or to listen whenever needed.</p>
 <p>Sponsorship turned out to be such a good way to help people get established in AA that it has become a custom followed throughout the AA world, even when hospitalization is not necessary.</p>

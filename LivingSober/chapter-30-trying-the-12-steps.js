@@ -1,7 +1,7 @@
 export const chapter30 = {
 	"reference": "trying-the-12-steps",
 	"title": "Trying the 12 Steps",
-	"body": `<h1>30 Trying the 12 Steps</h1>
+	"body": `<h4>30 Trying the 12 Steps</h4>
 <p>"When all else fails," said the old country doctor, "follow directions."<br>
 We have not talked about the Twelve Steps offered by AA as a program of recovery from alcoholism, and they are not going to be listed or explained here, because anyone curious about them can find them elsewhere. Their origin is striking, however.</p>
 <p>In 1935, two men met in Akron, Ohio. Both of them were then considered hopeless drunkards, which seemed shameful to those who had known them. One had been a Wall Street hot shot; the other, a noted surgeon; but both had drunk themselves almost to death. Each had tried many "cures" and been hospitalized over and over. It looked certain, even to them, that they were beyond help.</p>

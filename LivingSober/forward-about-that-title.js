@@ -1,7 +1,7 @@
 export const forwardAboutThatTitle = {
     "reference": "about-that-title",
     "title": "About That Title",
-	"body": `<h1>About That Title</h1>
+	"body": `<h4>About That Title</h4>
 <p>Even the words “stay sober”—let alone live sober—offended many
 of us when we first heard such advice. Although we had done a lot of
 drinking, many of us never felt drunk, and were sure we almost never

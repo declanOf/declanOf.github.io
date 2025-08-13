@@ -1,7 +1,7 @@
 export const chapter07 = {
 	"reference": "using-the-serenity-prayer",
 	"title": "Using the Serenity Prayer",                                                                 
-	"body": `<h1>7 Using the Serenity Prayer</h1>
+	"body": `<h4>7 Using the Serenity Prayer</h4>
 <p>On the walls of thousands of AA meeting rooms, in any of a variety of languages, this invocation can be seen:</p>
 <p>God grant us&nbsp;</p>
 <p>The serenity to accept&nbsp;the things we cannot change,&nbsp;</p>

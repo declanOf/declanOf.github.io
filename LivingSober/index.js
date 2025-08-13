@@ -2,69 +2,66 @@ let currentChapterId = 0;
 
 let fontStyleSizes = [];
 
-let fontStyleSizeIndex = null;
-
 import { chapters } from "./chapters.js";
 
 $(document).ready(
     () => {
         try
         {
-            $("button#information").on("click", (event) => {
-                $("div#information-dialog").dialog({
-                    title: "Information",
-                    modal: true,
-                    width: "80%",
-                    height: "auto"
-                });
-            });
+            buildTableOfContents();
 
-            $("body").on("click", (event) => {
-                if ($(event.target).is("div#information-dialog") || $(event.target).is(".ui-widget-overlay") || $(event.target).is("div#information-dialog p")) {
-                    $("div#information-dialog").dialog("close");
-                }
-            });
-
-            let newContent = "";
-
-            chapters.forEach((chapter, idx) => {
-                const chapterNumber = (idx < 2 || idx === chapters.length - 1) ? "&nbsp;" : (idx - 1).toString();
-
-                newContent += `<dt>${chapterNumber}</dt><dd><a class="show-chapter" attrId="${idx}">${chapter.title}</a></dd>`;
-            });
-
-            $("div#accordion dl.toc").append(newContent);
-
-            $("#accordion").accordion({"collapsible": true, "active": false});
-
-            $(".show-chapter").on("click", (event) => {
-                event.preventDefault();
-
-                changeChapter(parseInt($(event.target).attr("attrId")));
-            })
-
-            $("button#prev").on("click", (event) => changeChapter(currentChapterId - 1));
-
-            $("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
-
-            $("input#fontSizeSlider").on(
-                "input",
-                (event) => {
-                    const fontSize = parseInt($(event.target).val());
-
-                    changeFontSize(fontSize);
-                }
-            );
+            createFontSizeStyles();
 
             setPreferencesOnLoad();
-            createFontStyles();
+
+            addHandlers();
         } catch (error) {
             alert(error);
         }
     }
 );
 
-const createFontStyles = () => {
+const buildTableOfContents = () => {
+    let newContent = "";
+
+    chapters.forEach((chapter, idx) => {
+        const chapterNumber = (idx < 2 || idx === chapters.length - 1) ? "&nbsp;" : (idx - 1).toString();
+
+        newContent += `<dt>${chapterNumber}</dt><dd><a class="show-chapter" attrId="${idx}">${chapter.title}</a></dd>`;
+    });
+
+    $("div#accordion dl.toc").append(newContent);
+
+    $("#accordion").accordion({"collapsible": true, "active": false});
+};
+
+const addHandlers = () => {
+    $("button#information").on("click", (event) =>
+        $("div#information-dialog").dialog({
+            title: "Information",
+            modal: true,
+            width: "80%",
+            height: "auto"
+        })
+    );
+
+    $("body").on("click", (event) => {
+        if ($(event.target).is("div#information-dialog") || $(event.target).is(".ui-widget-overlay") || $(event.target).is("div#information-dialog p")) {
+            $("div#information-dialog").dialog("close");
+        }
+    });
+
+    $(".show-chapter").on("click", (event) => changeChapter(parseInt($(event.target).attr("attrId"))))
+
+    $("button#prev").on("click", (event) => changeChapter(currentChapterId - 1));
+
+    $("button#next").on("click", (event) => changeChapter(currentChapterId + 1));
+
+    $("input#fontSizeSlider").on("input", (event) => changeFontSize(parseInt($(event.target).val()))
+);
+};
+
+const createFontSizeStyles = () => {
     let fontStyles = "";
 
     for (let idx = 0; idx <= 50; idx++) {
@@ -74,8 +71,6 @@ const createFontStyles = () => {
 
         fontStyleSizes.push(`font-minus-${idx.toString()}-percent`);
     }
-
-    fontStyleSizeIndex = fontStyleSizes.length;
 
     fontStyleSizes.push();
 
@@ -108,7 +103,7 @@ const setFontSizeClass = (fontClass) => {
     if (fontStyleSizes.includes(fontClass)) {
         $("div#chapter-content").attr("class", fontClass);
 
-        localStorage.setItem("fontClass", newFontClass);
+        localStorage.setItem("fontClass", fontClass);
     } else {
         console.warn(`Font class "${fontClass}" not found in available font styles.`);
     }
@@ -143,7 +138,23 @@ const setPreferencesOnLoad = () => {
 
     const storedFontClass = localStorage.getItem("fontClass") ?? "";
 
+    setFontStyleSizeSlider(fontStyleSizes.indexOf(storedFontClass));
+
     changeChapter(parseInt(storedChapterId), "Living Sober");
 
     $("div#chapter-content").addClass(storedFontClass);
 };
+
+const setFontStyleSizeSlider = (fontStyleSizeIndex = 0) => {
+    const max = parseInt($("#fontSizeSlider").attr("max"));
+
+    const min = parseInt($("#fontSizeSlider").attr("min"));
+
+    const stepValue = min + fontStyleSizeIndex;
+
+    if (stepValue >= max || stepValue <= min) {
+        return;
+    }
+
+    $("#fontSizeSlider").val(stepValue);
+}

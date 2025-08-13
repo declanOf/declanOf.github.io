@@ -1,7 +1,7 @@
 export const chapter31 = {
 	"reference": "finding-your-own-way",
 	"title": "Finding Your Own Way",
-	"body": `<h1>31 Finding Your Own Way</h1>
+	"body": `<h4>31 Finding Your Own Way</h4>
 
 <p>We hope this booklet has made it eminently clear that we don’t consider drinking a frivolous subject. Alcoholism deserves and gets dead serious attention from us. We do not find jokes told at the expense of sick problem drinkers funny, except those we tell on ourselves from our vantage point of sobriety. We aren’t amused when someone teasingly threatens to get drunk. That’s like teasing about Russian roulette.</p>
 <p>In spite of our serious attitude toward alcoholism, you will find we can usually talk with humor and detachment about our past and our recovery. This is a healthy approach, we think. Certainly, it does not weaken our resolve to get and stay well.</p>

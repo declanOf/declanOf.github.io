@@ -1,12 +1,11 @@
 export const chapter27 = {
 	"reference": "letting-go-of-old-ideas",
 	"title": "Letting Go of Old Ideas",
-	"body": `<h1>27 Letting Go of Old Ideas</h1>
-<br>
-The ideas that got so deeply embedded in our lives during drinking do not all disappear quickly, as if by magic, the moment we start keeping the plug in the jug. Our days of wine and "Sweet Adeline" may be gone, but the malady lingers on.</p>
+	"body": `<h4>27 Letting Go of Old Ideas</h4>
+<p>The ideas that got so deeply embedded in our lives during drinking do not all disappear quickly, as if by magic, the moment we start keeping the plug in the jug. Our days of wine and "Sweet Adeline" may be gone, but the malady lingers on.</p>
 So we have found it therapeutic to nip off many old ideas that start to sprout up again. And they do, over and over.</p>
 What we try to achieve is a feeling of being relaxed and freed from the bonds of our old thinking. Many of our former habits of thought and the ideas they produced, limit our freedom. They just weigh us down and are of no use—so it turns out when we look them over with a fresh eye. We don't&nbsp;<em>
-have</em>
+have</em></p>
 &nbsp;to hang on to them any longer unless, upon examination, they prove valid and still truly fruitful.</p>
 We can now measure the present-day usefulness and truthfulness of a thought against a highly specific standard. We can say to ourselves, "Now, that is exactly what I used to think, in the drinking days. Does that kind of thinking help me stay sober? Is it good enough for me&nbsp;<em>
 today</em>

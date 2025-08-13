@@ -1,7 +1,7 @@
 export const chapter16 = {
 	"reference": "being-good-to-yourself",
 	"title": "Being Good to Yourself",                                                                 
-	"body": `<h1>16 Being Good to Yourself</h1>
+	"body": `<h4>16 Being Good to Yourself</h4>
 <p>When a loved one or a dear friend of ours is recuperating from a serious illness, we generally try to give what good nurses call T.L.C. (Tender Loving Care). We pamper a sick child, providing favorite foods and some fun to help in recovery.</p>
 <p>Convalescence from the illness of active alcoholism takes some time, and anyone going through it deserves consideration and a measure of T.L.C.</p>
 <p>In times past, people often believed that those recovering from certain ailments just deserved to suffer, since it was thought they had deliberately, selfishly inflicted the sickness on themselves.</p>
